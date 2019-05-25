@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E41382D2298E30B00938C3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41382C2298E30B00938C3C /* AppDelegate.m */; };
+		5E4138302298E30B00938C3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41382F2298E30B00938C3C /* ViewController.m */; };
+		5E4138332298E30B00938C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138312298E30B00938C3C /* Main.storyboard */; };
+		5E4138362298E30B00938C3C /* CakeTree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138342298E30B00938C3C /* CakeTree.xcdatamodeld */; };
+		5E4138382298E30C00938C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138372298E30C00938C3C /* Assets.xcassets */; };
+		5E41383B2298E30C00938C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138392298E30C00938C3C /* LaunchScreen.storyboard */; };
+		5E41383E2298E30C00938C3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41383D2298E30C00938C3C /* main.m */; };
+		5E4138482298E30C00938C3C /* CakeTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138472298E30C00938C3C /* CakeTreeTests.m */; };
+		5E4138532298E30C00938C3C /* CakeTreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138522298E30C00938C3C /* CakeTreeUITests.m */; };
+		5E4138792298E8A000938C3C /* 帮助类。包含网络，数据库，归档，定位等操作类的封装和实现 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138612298E8A000938C3C /* 帮助类。包含网络，数据库，归档，定位等操作类的封装和实现 */; };
+		5E41387A2298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138632298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 */; };
+		5E41387B2298E8A000938C3C /* 第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138652298E8A000938C3C /* 第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入 */; };
+		5E41387C2298E8A000938C3C /* 模块。包含各个模块的Model,View,Controller,Manager in Resources */ = {isa = PBXBuildFile; fileRef = 5E41386E2298E8A000938C3C /* 模块。包含各个模块的Model,View,Controller,Manager */; };
+		5E41387D2298E8A000938C3C /* 程序入口。包含AppDelegate,main.c,info.plist文件 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138702298E8A000938C3C /* 程序入口。包含AppDelegate,main.c,info.plist文件 */; };
+		5E41387E2298E8A000938C3C /* 工具类，一些非对象的，而是类方法调用的类 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138722298E8A000938C3C /* 工具类，一些非对象的，而是类方法调用的类 */; };
+		5E41387F2298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138742298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 */; };
+		5E4138802298E8A000938C3C /* 系统框架。包含导入的系统的框架 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138762298E8A000938C3C /* 系统框架。包含导入的系统的框架 */; };
+		5E4138812298E8A000938C3C /* 类目。包含各种类的分类 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138782298E8A000938C3C /* 类目。包含各种类的分类 */; };
+		5E4138842298EDB100938C3C /* CakeForestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138832298EDB100938C3C /* CakeForestViewController.m */; };
+		5E4138872298EDC500938C3C /* CakeTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138862298EDC500938C3C /* CakeTreeViewController.m */; };
+		5E41388A2298EE1700938C3C /* CakeTreeTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138892298EE1700938C3C /* CakeTreeTicketViewController.m */; };
+		5E41388D2298EE9300938C3C /* CakeTreeEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41388C2298EE9300938C3C /* CakeTreeEditViewController.m */; };
+		5E4138902298EEE800938C3C /* CakeForestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41388F2298EEE800938C3C /* CakeForestView.m */; };
+		5E4138932298EEF800938C3C /* CakeTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138922298EEF800938C3C /* CakeTreeView.m */; };
+		5E4138962298EF0300938C3C /* CakeTreeTicketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138952298EF0300938C3C /* CakeTreeTicketView.m */; };
+		5E4138992298EF0D00938C3C /* CakeTreeEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138982298EF0D00938C3C /* CakeTreeEditView.m */; };
+		CEEBB85DEA62DA10E7AC09BA /* libPods-CakeTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E4138442298E30C00938C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4138202298E30B00938C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E4138272298E30B00938C3C;
+			remoteInfo = CakeTree;
+		};
+		5E41384F2298E30C00938C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4138202298E30B00938C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E4138272298E30B00938C3C;
+			remoteInfo = CakeTree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43C7E6454E874E05B4C86DFA /* Pods-CakeTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CakeTree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CakeTree/Pods-CakeTree.debug.xcconfig"; sourceTree = "<group>"; };
+		5E4138282298E30B00938C3C /* CakeTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E41382B2298E30B00938C3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E41382C2298E30B00938C3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E41382E2298E30B00938C3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E41382F2298E30B00938C3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E4138322298E30B00938C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E4138352298E30B00938C3C /* CakeTree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CakeTree.xcdatamodel; sourceTree = "<group>"; };
+		5E4138372298E30C00938C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E41383A2298E30C00938C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E41383C2298E30C00938C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E41383D2298E30C00938C3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E4138432298E30C00938C3C /* CakeTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4138472298E30C00938C3C /* CakeTreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeTests.m; sourceTree = "<group>"; };
+		5E4138492298E30C00938C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E41384E2298E30C00938C3C /* CakeTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4138522298E30C00938C3C /* CakeTreeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeUITests.m; sourceTree = "<group>"; };
+		5E4138542298E30C00938C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4138612298E8A000938C3C /* 帮助类。包含网络，数据库，归档，定位等操作类的封装和实现 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "帮助类。包含网络，数据库，归档，定位等操作类的封装和实现"; sourceTree = "<group>"; };
+		5E4138632298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件"; sourceTree = "<group>"; };
+		5E4138652298E8A000938C3C /* 第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入"; sourceTree = "<group>"; };
+		5E41386E2298E8A000938C3C /* 模块。包含各个模块的Model,View,Controller,Manager */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "模块。包含各个模块的Model,View,Controller,Manager"; sourceTree = "<group>"; };
+		5E4138702298E8A000938C3C /* 程序入口。包含AppDelegate,main.c,info.plist文件 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "程序入口。包含AppDelegate,main.c,info.plist文件"; sourceTree = "<group>"; };
+		5E4138722298E8A000938C3C /* 工具类，一些非对象的，而是类方法调用的类 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "工具类，一些非对象的，而是类方法调用的类"; sourceTree = "<group>"; };
+		5E4138742298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "资源。包含plist,image,html,bundle，Localizable.strings等"; sourceTree = "<group>"; };
+		5E4138762298E8A000938C3C /* 系统框架。包含导入的系统的框架 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "系统框架。包含导入的系统的框架"; sourceTree = "<group>"; };
+		5E4138782298E8A000938C3C /* 类目。包含各种类的分类 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "类目。包含各种类的分类"; sourceTree = "<group>"; };
+		5E4138822298EDB100938C3C /* CakeForestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeForestViewController.h; sourceTree = "<group>"; };
+		5E4138832298EDB100938C3C /* CakeForestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeForestViewController.m; sourceTree = "<group>"; };
+		5E4138852298EDC500938C3C /* CakeTreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeViewController.h; sourceTree = "<group>"; };
+		5E4138862298EDC500938C3C /* CakeTreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeViewController.m; sourceTree = "<group>"; };
+		5E4138882298EE1700938C3C /* CakeTreeTicketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeTicketViewController.h; sourceTree = "<group>"; };
+		5E4138892298EE1700938C3C /* CakeTreeTicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeTicketViewController.m; sourceTree = "<group>"; };
+		5E41388B2298EE9300938C3C /* CakeTreeEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeEditViewController.h; sourceTree = "<group>"; };
+		5E41388C2298EE9300938C3C /* CakeTreeEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeEditViewController.m; sourceTree = "<group>"; };
+		5E41388E2298EEE800938C3C /* CakeForestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeForestView.h; sourceTree = "<group>"; };
+		5E41388F2298EEE800938C3C /* CakeForestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeForestView.m; sourceTree = "<group>"; };
+		5E4138912298EEF800938C3C /* CakeTreeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeView.h; sourceTree = "<group>"; };
+		5E4138922298EEF800938C3C /* CakeTreeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeView.m; sourceTree = "<group>"; };
+		5E4138942298EF0300938C3C /* CakeTreeTicketView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeTicketView.h; sourceTree = "<group>"; };
+		5E4138952298EF0300938C3C /* CakeTreeTicketView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeTicketView.m; sourceTree = "<group>"; };
+		5E4138972298EF0D00938C3C /* CakeTreeEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeEditView.h; sourceTree = "<group>"; };
+		5E4138982298EF0D00938C3C /* CakeTreeEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeEditView.m; sourceTree = "<group>"; };
+		5E41389A2298F24C00938C3C /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		5E41389B229907FD00938C3C /* CSMMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMMacro.h; sourceTree = "<group>"; };
+		5E41389C229907FD00938C3C /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		5E41389D229907FD00938C3C /* AppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
+		5E41389E229907FD00938C3C /* AppInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInclude.h; sourceTree = "<group>"; };
+		5E4138A022990C5200938C3C /* ViewDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewDefines.h; sourceTree = "<group>"; };
+		C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CakeTree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DA22BF1988A7E37DCEA00F /* Pods-CakeTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CakeTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-CakeTree/Pods-CakeTree.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E4138252298E30B00938C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEBB85DEA62DA10E7AC09BA /* libPods-CakeTree.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4138402298E30C00938C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E41384B2298E30C00938C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0357B7D5EA1E35E4BA229842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43C7E6454E874E05B4C86DFA /* Pods-CakeTree.debug.xcconfig */,
+				E6DA22BF1988A7E37DCEA00F /* Pods-CakeTree.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0A29DDC10CE49A36EFB7AC69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E41381F2298E30B00938C3C = {
+			isa = PBXGroup;
+			children = (
+				5E41382A2298E30B00938C3C /* CakeTree */,
+				5E4138462298E30C00938C3C /* CakeTreeTests */,
+				5E4138512298E30C00938C3C /* CakeTreeUITests */,
+				5E4138292298E30B00938C3C /* Products */,
+				0357B7D5EA1E35E4BA229842 /* Pods */,
+				0A29DDC10CE49A36EFB7AC69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E4138292298E30B00938C3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138282298E30B00938C3C /* CakeTree.app */,
+				5E4138432298E30C00938C3C /* CakeTreeTests.xctest */,
+				5E41384E2298E30C00938C3C /* CakeTreeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E41382A2298E30B00938C3C /* CakeTree */ = {
+			isa = PBXGroup;
+			children = (
+				5E41386F2298E8A000938C3C /* AppEntry */,
+				5E4138772298E8A000938C3C /* Categories */,
+				5E4138622298E8A000938C3C /* Config */,
+				5E4138752298E8A000938C3C /* Frameworks */,
+				5E4138602298E8A000938C3C /* Helpers */,
+				5E4138662298E8A000938C3C /* Modules */,
+				5E4138732298E8A000938C3C /* Resources */,
+				5E4138712298E8A000938C3C /* Tools */,
+				5E4138642298E8A000938C3C /* Vendors */,
+			);
+			path = CakeTree;
+			sourceTree = "<group>";
+		};
+		5E4138462298E30C00938C3C /* CakeTreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138472298E30C00938C3C /* CakeTreeTests.m */,
+				5E4138492298E30C00938C3C /* Info.plist */,
+			);
+			path = CakeTreeTests;
+			sourceTree = "<group>";
+		};
+		5E4138512298E30C00938C3C /* CakeTreeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138522298E30C00938C3C /* CakeTreeUITests.m */,
+				5E4138542298E30C00938C3C /* Info.plist */,
+			);
+			path = CakeTreeUITests;
+			sourceTree = "<group>";
+		};
+		5E4138602298E8A000938C3C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138612298E8A000938C3C /* 帮助类。包含网络，数据库，归档，定位等操作类的封装和实现 */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5E4138622298E8A000938C3C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5E41389F22990C3200938C3C /* Define */,
+				5E4138632298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 */,
+				5E41389A2298F24C00938C3C /* Prefix.h */,
+				5E41389D229907FD00938C3C /* AppDefine.h */,
+				5E41389E229907FD00938C3C /* AppInclude.h */,
+				5E41389C229907FD00938C3C /* AppMacro.h */,
+				5E41389B229907FD00938C3C /* CSMMacro.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5E4138642298E8A000938C3C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138652298E8A000938C3C /* 第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入 */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		5E4138662298E8A000938C3C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138672298E8A000938C3C /* HappinessCakeTree */,
+				5E41386E2298E8A000938C3C /* 模块。包含各个模块的Model,View,Controller,Manager */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5E4138672298E8A000938C3C /* HappinessCakeTree */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138682298E8A000938C3C /* APIManagers */,
+				5E4138692298E8A000938C3C /* Reformers */,
+				5E41386A2298E8A000938C3C /* Controllers */,
+				5E41386B2298E8A000938C3C /* Views */,
+			);
+			path = HappinessCakeTree;
+			sourceTree = "<group>";
+		};
+		5E4138682298E8A000938C3C /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		5E4138692298E8A000938C3C /* Reformers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reformers;
+			sourceTree = "<group>";
+		};
+		5E41386A2298E8A000938C3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138822298EDB100938C3C /* CakeForestViewController.h */,
+				5E4138832298EDB100938C3C /* CakeForestViewController.m */,
+				5E4138852298EDC500938C3C /* CakeTreeViewController.h */,
+				5E4138862298EDC500938C3C /* CakeTreeViewController.m */,
+				5E4138882298EE1700938C3C /* CakeTreeTicketViewController.h */,
+				5E4138892298EE1700938C3C /* CakeTreeTicketViewController.m */,
+				5E41388B2298EE9300938C3C /* CakeTreeEditViewController.h */,
+				5E41388C2298EE9300938C3C /* CakeTreeEditViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E41386B2298E8A000938C3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E41386C2298E8A000938C3C /* Cell */,
+				5E41386D2298E8A000938C3C /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E41386C2298E8A000938C3C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5E41386D2298E8A000938C3C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				5E41388E2298EEE800938C3C /* CakeForestView.h */,
+				5E41388F2298EEE800938C3C /* CakeForestView.m */,
+				5E4138912298EEF800938C3C /* CakeTreeView.h */,
+				5E4138922298EEF800938C3C /* CakeTreeView.m */,
+				5E4138942298EF0300938C3C /* CakeTreeTicketView.h */,
+				5E4138952298EF0300938C3C /* CakeTreeTicketView.m */,
+				5E4138972298EF0D00938C3C /* CakeTreeEditView.h */,
+				5E4138982298EF0D00938C3C /* CakeTreeEditView.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		5E41386F2298E8A000938C3C /* AppEntry */ = {
+			isa = PBXGroup;
+			children = (
+				5E41382B2298E30B00938C3C /* AppDelegate.h */,
+				5E41382C2298E30B00938C3C /* AppDelegate.m */,
+				5E41382E2298E30B00938C3C /* ViewController.h */,
+				5E41382F2298E30B00938C3C /* ViewController.m */,
+				5E4138312298E30B00938C3C /* Main.storyboard */,
+				5E4138392298E30C00938C3C /* LaunchScreen.storyboard */,
+				5E41383C2298E30C00938C3C /* Info.plist */,
+				5E41383D2298E30C00938C3C /* main.m */,
+				5E4138342298E30B00938C3C /* CakeTree.xcdatamodeld */,
+				5E4138702298E8A000938C3C /* 程序入口。包含AppDelegate,main.c,info.plist文件 */,
+			);
+			path = AppEntry;
+			sourceTree = "<group>";
+		};
+		5E4138712298E8A000938C3C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138722298E8A000938C3C /* 工具类，一些非对象的，而是类方法调用的类 */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5E4138732298E8A000938C3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138372298E30C00938C3C /* Assets.xcassets */,
+				5E4138742298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E4138752298E8A000938C3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138762298E8A000938C3C /* 系统框架。包含导入的系统的框架 */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E4138772298E8A000938C3C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138782298E8A000938C3C /* 类目。包含各种类的分类 */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5E41389F22990C3200938C3C /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138A022990C5200938C3C /* ViewDefines.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E4138272298E30B00938C3C /* CakeTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4138572298E30C00938C3C /* Build configuration list for PBXNativeTarget "CakeTree" */;
+			buildPhases = (
+				3D8F0B2C533BC02A23D223D9 /* [CP] Check Pods Manifest.lock */,
+				5E4138242298E30B00938C3C /* Sources */,
+				5E4138252298E30B00938C3C /* Frameworks */,
+				5E4138262298E30B00938C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CakeTree;
+			productName = CakeTree;
+			productReference = 5E4138282298E30B00938C3C /* CakeTree.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E4138422298E30C00938C3C /* CakeTreeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E41385A2298E30C00938C3C /* Build configuration list for PBXNativeTarget "CakeTreeTests" */;
+			buildPhases = (
+				5E41383F2298E30C00938C3C /* Sources */,
+				5E4138402298E30C00938C3C /* Frameworks */,
+				5E4138412298E30C00938C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E4138452298E30C00938C3C /* PBXTargetDependency */,
+			);
+			name = CakeTreeTests;
+			productName = CakeTreeTests;
+			productReference = 5E4138432298E30C00938C3C /* CakeTreeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E41384D2298E30C00938C3C /* CakeTreeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E41385D2298E30C00938C3C /* Build configuration list for PBXNativeTarget "CakeTreeUITests" */;
+			buildPhases = (
+				5E41384A2298E30C00938C3C /* Sources */,
+				5E41384B2298E30C00938C3C /* Frameworks */,
+				5E41384C2298E30C00938C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E4138502298E30C00938C3C /* PBXTargetDependency */,
+			);
+			name = CakeTreeUITests;
+			productName = CakeTreeUITests;
+			productReference = 5E41384E2298E30C00938C3C /* CakeTreeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E4138202298E30B00938C3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Xush;
+				TargetAttributes = {
+					5E4138272298E30B00938C3C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					5E4138422298E30C00938C3C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5E4138272298E30B00938C3C;
+					};
+					5E41384D2298E30C00938C3C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5E4138272298E30B00938C3C;
+					};
+				};
+			};
+			buildConfigurationList = 5E4138232298E30B00938C3C /* Build configuration list for PBXProject "CakeTree" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E41381F2298E30B00938C3C;
+			productRefGroup = 5E4138292298E30B00938C3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E4138272298E30B00938C3C /* CakeTree */,
+				5E4138422298E30C00938C3C /* CakeTreeTests */,
+				5E41384D2298E30C00938C3C /* CakeTreeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E4138262298E30B00938C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E41387B2298E8A000938C3C /* 第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入 in Resources */,
+				5E41387E2298E8A000938C3C /* 工具类，一些非对象的，而是类方法调用的类 in Resources */,
+				5E41387F2298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 in Resources */,
+				5E41387A2298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 in Resources */,
+				5E41383B2298E30C00938C3C /* LaunchScreen.storyboard in Resources */,
+				5E4138382298E30C00938C3C /* Assets.xcassets in Resources */,
+				5E4138802298E8A000938C3C /* 系统框架。包含导入的系统的框架 in Resources */,
+				5E41387C2298E8A000938C3C /* 模块。包含各个模块的Model,View,Controller,Manager in Resources */,
+				5E4138332298E30B00938C3C /* Main.storyboard in Resources */,
+				5E4138792298E8A000938C3C /* 帮助类。包含网络，数据库，归档，定位等操作类的封装和实现 in Resources */,
+				5E41387D2298E8A000938C3C /* 程序入口。包含AppDelegate,main.c,info.plist文件 in Resources */,
+				5E4138812298E8A000938C3C /* 类目。包含各种类的分类 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4138412298E30C00938C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E41384C2298E30C00938C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D8F0B2C533BC02A23D223D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CakeTree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4138242298E30B00938C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4138932298EEF800938C3C /* CakeTreeView.m in Sources */,
+				5E41388D2298EE9300938C3C /* CakeTreeEditViewController.m in Sources */,
+				5E4138842298EDB100938C3C /* CakeForestViewController.m in Sources */,
+				5E4138302298E30B00938C3C /* ViewController.m in Sources */,
+				5E4138872298EDC500938C3C /* CakeTreeViewController.m in Sources */,
+				5E4138362298E30B00938C3C /* CakeTree.xcdatamodeld in Sources */,
+				5E41383E2298E30C00938C3C /* main.m in Sources */,
+				5E4138962298EF0300938C3C /* CakeTreeTicketView.m in Sources */,
+				5E41388A2298EE1700938C3C /* CakeTreeTicketViewController.m in Sources */,
+				5E41382D2298E30B00938C3C /* AppDelegate.m in Sources */,
+				5E4138992298EF0D00938C3C /* CakeTreeEditView.m in Sources */,
+				5E4138902298EEE800938C3C /* CakeForestView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E41383F2298E30C00938C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4138482298E30C00938C3C /* CakeTreeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E41384A2298E30C00938C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4138532298E30C00938C3C /* CakeTreeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E4138452298E30C00938C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E4138272298E30B00938C3C /* CakeTree */;
+			targetProxy = 5E4138442298E30C00938C3C /* PBXContainerItemProxy */;
+		};
+		5E4138502298E30C00938C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E4138272298E30B00938C3C /* CakeTree */;
+			targetProxy = 5E41384F2298E30C00938C3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E4138312298E30B00938C3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E4138322298E30B00938C3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E4138392298E30C00938C3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E41383A2298E30C00938C3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E4138552298E30C00938C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E4138562298E30C00938C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4138582298E30C00938C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C7E6454E874E05B4C86DFA /* Pods-CakeTree.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CakeTree/Config/Prefix.h";
+				INFOPLIST_FILE = CakeTree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.CakeTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E4138592298E30C00938C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6DA22BF1988A7E37DCEA00F /* Pods-CakeTree.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CakeTree/Config/Prefix.h";
+				INFOPLIST_FILE = CakeTree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.CakeTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E41385B2298E30C00938C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = CakeTreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.CakeTreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeTree.app/CakeTree";
+			};
+			name = Debug;
+		};
+		5E41385C2298E30C00938C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = CakeTreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.CakeTreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeTree.app/CakeTree";
+			};
+			name = Release;
+		};
+		5E41385E2298E30C00938C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = CakeTreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.CakeTreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CakeTree;
+			};
+			name = Debug;
+		};
+		5E41385F2298E30C00938C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = CakeTreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.CakeTreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CakeTree;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E4138232298E30B00938C3C /* Build configuration list for PBXProject "CakeTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4138552298E30C00938C3C /* Debug */,
+				5E4138562298E30C00938C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4138572298E30C00938C3C /* Build configuration list for PBXNativeTarget "CakeTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4138582298E30C00938C3C /* Debug */,
+				5E4138592298E30C00938C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E41385A2298E30C00938C3C /* Build configuration list for PBXNativeTarget "CakeTreeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E41385B2298E30C00938C3C /* Debug */,
+				5E41385C2298E30C00938C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E41385D2298E30C00938C3C /* Build configuration list for PBXNativeTarget "CakeTreeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E41385E2298E30C00938C3C /* Debug */,
+				5E41385F2298E30C00938C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E4138342298E30B00938C3C /* CakeTree.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E4138352298E30B00938C3C /* CakeTree.xcdatamodel */,
+			);
+			currentVersion = 5E4138352298E30B00938C3C /* CakeTree.xcdatamodel */;
+			path = CakeTree.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5E4138202298E30B00938C3C /* Project object */;
+}
