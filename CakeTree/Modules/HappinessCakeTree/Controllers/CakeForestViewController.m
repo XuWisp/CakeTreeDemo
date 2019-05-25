@@ -11,7 +11,7 @@
 
 #import "CakeForestView.h"
 
-@interface CakeForestViewController ()
+@interface CakeForestViewController () <TargetDelegate>
 
 @property (nonatomic, strong) CakeForestView * mainV;
 
@@ -45,16 +45,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - delegate
+#pragma mark - TargetDelegate
 
-
+- (void)eventResponseWithSender:(id)sender {
+    if ([sender isKindOfClass:[UIButton class]]) {
+        CakeTreeViewController *ctVC = [[CakeTreeViewController alloc] init];
+        [self.navigationController pushViewController:ctVC animated:YES];
+    }
+}
 
 #pragma mark - event response
 
-- (void)myTreeBtnClick {
-    CakeTreeViewController *ctVC = [[CakeTreeViewController alloc] init];
-    [self.navigationController pushViewController:ctVC animated:YES];
-}
 
 #pragma mark - private methods
 // 正常情况下ViewController里面不应该写这层代码
@@ -64,9 +65,10 @@
 - (CakeForestView *)mainV {
     if (!_mainV) {
         _mainV = [[CakeForestView alloc] init];
-        [_mainV.myTreeBtn addTarget:self action:@selector(myTreeBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
+        _mainV.targetDelegate = self;
     }
     return _mainV;
 }
+
 
 @end

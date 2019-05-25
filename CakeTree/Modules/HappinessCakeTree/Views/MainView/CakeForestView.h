@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ViewDefines.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CakeForestView : UIView
 
-@property (nonatomic, strong) UIButton *myTreeBtn;
+@property (nonatomic, weak) id <TargetDelegate> _Nullable targetDelegate;
+@property (nonatomic, weak) id <UITableViewDataSource> _Nullable tvDataSource;
+@property (nonatomic, weak) id <UITableViewDelegate> _Nullable tvDelegate;
 
 @end
 

@@ -6,6 +6,7 @@ pod 'HandyAutoLayout'
 pod 'HandyFrame'
 pod 'YLGIFImage'
 pod 'FLAnimatedImage'
+pod 'Aspects'
 
 end
 

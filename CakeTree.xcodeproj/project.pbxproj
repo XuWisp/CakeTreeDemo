@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5E41382D2298E30B00938C3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41382C2298E30B00938C3C /* AppDelegate.m */; };
-		5E4138302298E30B00938C3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41382F2298E30B00938C3C /* ViewController.m */; };
 		5E4138332298E30B00938C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138312298E30B00938C3C /* Main.storyboard */; };
 		5E4138362298E30B00938C3C /* CakeTree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138342298E30B00938C3C /* CakeTree.xcdatamodeld */; };
 		5E4138382298E30C00938C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4138372298E30C00938C3C /* Assets.xcassets */; };
@@ -33,6 +32,7 @@
 		5E4138932298EEF800938C3C /* CakeTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138922298EEF800938C3C /* CakeTreeView.m */; };
 		5E4138962298EF0300938C3C /* CakeTreeTicketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138952298EF0300938C3C /* CakeTreeTicketView.m */; };
 		5E4138992298EF0D00938C3C /* CakeTreeEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138982298EF0D00938C3C /* CakeTreeEditView.m */; };
+		5E4138A422992DD800938C3C /* ViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138A322992DD800938C3C /* ViewControllerIntercepter.m */; };
 		CEEBB85DEA62DA10E7AC09BA /* libPods-CakeTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +58,6 @@
 		5E4138282298E30B00938C3C /* CakeTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E41382B2298E30B00938C3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E41382C2298E30B00938C3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5E41382E2298E30B00938C3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5E41382F2298E30B00938C3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5E4138322298E30B00938C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E4138352298E30B00938C3C /* CakeTree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CakeTree.xcdatamodel; sourceTree = "<group>"; };
 		5E4138372298E30C00938C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +101,8 @@
 		5E41389D229907FD00938C3C /* AppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
 		5E41389E229907FD00938C3C /* AppInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInclude.h; sourceTree = "<group>"; };
 		5E4138A022990C5200938C3C /* ViewDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewDefines.h; sourceTree = "<group>"; };
+		5E4138A222992DD800938C3C /* ViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerIntercepter.h; sourceTree = "<group>"; };
+		5E4138A322992DD800938C3C /* ViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerIntercepter.m; sourceTree = "<group>"; };
 		C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CakeTree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DA22BF1988A7E37DCEA00F /* Pods-CakeTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CakeTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-CakeTree/Pods-CakeTree.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +217,7 @@
 		5E4138622298E8A000938C3C /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				5E4138A122992D9700938C3C /* AspectsIntercepter */,
 				5E41389F22990C3200938C3C /* Define */,
 				5E4138632298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 */,
 				5E41389A2298F24C00938C3C /* Prefix.h */,
@@ -321,8 +322,6 @@
 			children = (
 				5E41382B2298E30B00938C3C /* AppDelegate.h */,
 				5E41382C2298E30B00938C3C /* AppDelegate.m */,
-				5E41382E2298E30B00938C3C /* ViewController.h */,
-				5E41382F2298E30B00938C3C /* ViewController.m */,
 				5E4138312298E30B00938C3C /* Main.storyboard */,
 				5E4138392298E30C00938C3C /* LaunchScreen.storyboard */,
 				5E41383C2298E30C00938C3C /* Info.plist */,
@@ -372,6 +371,15 @@
 				5E4138A022990C5200938C3C /* ViewDefines.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		5E4138A122992D9700938C3C /* AspectsIntercepter */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138A222992DD800938C3C /* ViewControllerIntercepter.h */,
+				5E4138A322992DD800938C3C /* ViewControllerIntercepter.m */,
+			);
+			path = AspectsIntercepter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,10 +546,10 @@
 				5E4138932298EEF800938C3C /* CakeTreeView.m in Sources */,
 				5E41388D2298EE9300938C3C /* CakeTreeEditViewController.m in Sources */,
 				5E4138842298EDB100938C3C /* CakeForestViewController.m in Sources */,
-				5E4138302298E30B00938C3C /* ViewController.m in Sources */,
 				5E4138872298EDC500938C3C /* CakeTreeViewController.m in Sources */,
 				5E4138362298E30B00938C3C /* CakeTree.xcdatamodeld in Sources */,
 				5E41383E2298E30C00938C3C /* main.m in Sources */,
+				5E4138A422992DD800938C3C /* ViewControllerIntercepter.m in Sources */,
 				5E4138962298EF0300938C3C /* CakeTreeTicketView.m in Sources */,
 				5E41388A2298EE1700938C3C /* CakeTreeTicketViewController.m in Sources */,
 				5E41382D2298E30B00938C3C /* AppDelegate.m in Sources */,
@@ -721,7 +729,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXE5KCM6E6;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CakeTree/Config/Prefix.h";
-				INFOPLIST_FILE = CakeTree/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CakeTree/AppEntry/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -740,7 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXE5KCM6E6;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CakeTree/Config/Prefix.h";
-				INFOPLIST_FILE = CakeTree/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CakeTree/AppEntry/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

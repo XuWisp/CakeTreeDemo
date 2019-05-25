@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CakeForestViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    UINavigationController *naviC = [UINavigationController alloc] initWithRootViewController:<#(nonnull UIViewController *)#>
+    CakeForestViewController *cfVC = [[CakeForestViewController alloc] init];
+    UINavigationController *naviC = [[UINavigationController alloc] initWithRootViewController:cfVC];
+    self.window.rootViewController = naviC;
     return YES;
 }
 

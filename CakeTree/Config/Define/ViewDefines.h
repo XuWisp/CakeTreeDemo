@@ -10,17 +10,11 @@
 #define ViewDefines_h
 
 /*************************************************************************************/
-@protocol ViewTarget <NSObject>
-
-@required
-
-- (void)
+@protocol TargetDelegate <NSObject>
 
 @optional
 
-- (void)
-- (NSDictionary *_Nullable)reformParams:(NSDictionary *_Nullable)params;
-- (NSInteger)loadDataWithParams:(NSDictionary *_Nullable)params;
+- (void)eventResponseWithSender:(id)sender;
 
 @end
 

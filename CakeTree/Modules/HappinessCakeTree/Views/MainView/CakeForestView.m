@@ -10,14 +10,12 @@
 
 @interface CakeForestView ()
 
+@property (nonatomic, strong) UIButton *myTreeBtn;
+@property (nonatomic, strong) UITableView *tableV;
 
 @end
 
 @implementation CakeForestView
-
-#pragma mark - Lifecycle
-
-
 
 #pragma mark - life cycle
 
@@ -42,6 +40,9 @@
 
 #pragma mark - event response
 
+- (void)btnClick:(id)sender {
+    [self.targetDelegate eventResponseWithSender:sender];
+}
 
 #pragma mark - private methods
 // 正常情况下ViewController里面不应该写这层代码
@@ -52,10 +53,19 @@
     if (!_myTreeBtn) {
         _myTreeBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
         [_myTreeBtn setTitle:@"我的幸福蛋糕树" forState:(UIControlStateNormal)];
+        [_myTreeBtn addTarget:self action:@selector(btnClick:) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _myTreeBtn;
 }
 
+- (UITableView *)tableV {
+    if (!_tableV) {
+        _tableV = [[UITableView alloc] init];
+        _tableV.dataSource = self.tvDataSource;
+        _tableV.delegate = self.tvDelegate;
+    }
+    return _tableV;
+}
 
 
 @end
