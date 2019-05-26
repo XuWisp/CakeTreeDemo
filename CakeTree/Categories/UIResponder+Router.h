@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIResponder (Router)
 
 - (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
+- (NSInvocation *)createInvocationWithSelector:(SEL)selector;
 
 @end
 

@@ -45,7 +45,6 @@
 		BD182DA822998738000F414A /* bee.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9D22998738000F414A /* bee.gif */; };
 		BD182DA922998738000F414A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9E22998738000F414A /* 1.png */; };
 		BDFB33A0229A8C1B00D60F3F /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB339E229A8C1B00D60F3F /* UIResponder+Router.m */; };
-		BDFB33A3229A933100D60F3F /* NSObject+Invotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB33A2229A933100D60F3F /* NSObject+Invotation.m */; };
 		CEEBB85DEA62DA10E7AC09BA /* libPods-CakeTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */; };
 /* End PBXBuildFile section */
 
@@ -129,8 +128,6 @@
 		BD182D9E22998738000F414A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		BDFB339E229A8C1B00D60F3F /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
 		BDFB339F229A8C1B00D60F3F /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
-		BDFB33A1229A933100D60F3F /* NSObject+Invotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Invotation.h"; sourceTree = "<group>"; };
-		BDFB33A2229A933100D60F3F /* NSObject+Invotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Invotation.m"; sourceTree = "<group>"; };
 		C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CakeTree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DA22BF1988A7E37DCEA00F /* Pods-CakeTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CakeTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-CakeTree/Pods-CakeTree.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -392,8 +389,6 @@
 				BDFB339F229A8C1B00D60F3F /* UIResponder+Router.h */,
 				BDFB339E229A8C1B00D60F3F /* UIResponder+Router.m */,
 				5E4138782298E8A000938C3C /* 类目。包含各种类的分类 */,
-				BDFB33A1229A933100D60F3F /* NSObject+Invotation.h */,
-				BDFB33A2229A933100D60F3F /* NSObject+Invotation.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -607,7 +602,6 @@
 			files = (
 				5E4138932298EEF800938C3C /* CakeTreeView.m in Sources */,
 				5E41388D2298EE9300938C3C /* CakeTreeEditViewController.m in Sources */,
-				BDFB33A3229A933100D60F3F /* NSObject+Invotation.m in Sources */,
 				5E4138842298EDB100938C3C /* CakeForestViewController.m in Sources */,
 				5E4138872298EDC500938C3C /* CakeTreeViewController.m in Sources */,
 				5E4138362298E30B00938C3C /* CakeTree.xcdatamodeld in Sources */,
