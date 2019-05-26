@@ -33,6 +33,19 @@
 		5E4138962298EF0300938C3C /* CakeTreeTicketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138952298EF0300938C3C /* CakeTreeTicketView.m */; };
 		5E4138992298EF0D00938C3C /* CakeTreeEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138982298EF0D00938C3C /* CakeTreeEditView.m */; };
 		5E4138A422992DD800938C3C /* ViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4138A322992DD800938C3C /* ViewControllerIntercepter.m */; };
+		BD182D9F22998738000F414A /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9422998738000F414A /* 6.png */; };
+		BD182DA022998738000F414A /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9522998738000F414A /* 4.png */; };
+		BD182DA122998738000F414A /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9622998738000F414A /* 3.png */; };
+		BD182DA222998738000F414A /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9722998738000F414A /* 5.png */; };
+		BD182DA322998738000F414A /* 背景.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9822998738000F414A /* 背景.png */; };
+		BD182DA422998738000F414A /* 礼物.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9922998738000F414A /* 礼物.png */; };
+		BD182DA522998738000F414A /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9A22998738000F414A /* 0.png */; };
+		BD182DA622998738000F414A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9B22998738000F414A /* 2.png */; };
+		BD182DA722998738000F414A /* 发光.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9C22998738000F414A /* 发光.gif */; };
+		BD182DA822998738000F414A /* bee.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9D22998738000F414A /* bee.gif */; };
+		BD182DA922998738000F414A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9E22998738000F414A /* 1.png */; };
+		BDFB33A0229A8C1B00D60F3F /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB339E229A8C1B00D60F3F /* UIResponder+Router.m */; };
+		BDFB33A3229A933100D60F3F /* NSObject+Invotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB33A2229A933100D60F3F /* NSObject+Invotation.m */; };
 		CEEBB85DEA62DA10E7AC09BA /* libPods-CakeTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +116,21 @@
 		5E4138A022990C5200938C3C /* ViewDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewDefines.h; sourceTree = "<group>"; };
 		5E4138A222992DD800938C3C /* ViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerIntercepter.h; sourceTree = "<group>"; };
 		5E4138A322992DD800938C3C /* ViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerIntercepter.m; sourceTree = "<group>"; };
+		BD182D9422998738000F414A /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		BD182D9522998738000F414A /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		BD182D9622998738000F414A /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		BD182D9722998738000F414A /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		BD182D9822998738000F414A /* 背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景.png"; sourceTree = "<group>"; };
+		BD182D9922998738000F414A /* 礼物.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "礼物.png"; sourceTree = "<group>"; };
+		BD182D9A22998738000F414A /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		BD182D9B22998738000F414A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		BD182D9C22998738000F414A /* 发光.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "发光.gif"; sourceTree = "<group>"; };
+		BD182D9D22998738000F414A /* bee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bee.gif; sourceTree = "<group>"; };
+		BD182D9E22998738000F414A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		BDFB339E229A8C1B00D60F3F /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		BDFB339F229A8C1B00D60F3F /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		BDFB33A1229A933100D60F3F /* NSObject+Invotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Invotation.h"; sourceTree = "<group>"; };
+		BDFB33A2229A933100D60F3F /* NSObject+Invotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Invotation.m"; sourceTree = "<group>"; };
 		C08DE404BDE97836EBC8EDDB /* libPods-CakeTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CakeTree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DA22BF1988A7E37DCEA00F /* Pods-CakeTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CakeTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-CakeTree/Pods-CakeTree.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -343,6 +371,7 @@
 		5E4138732298E8A000938C3C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BD182D9322998721000F414A /* image */,
 				5E4138372298E30C00938C3C /* Assets.xcassets */,
 				5E4138742298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 */,
 			);
@@ -360,7 +389,11 @@
 		5E4138772298E8A000938C3C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				BDFB339F229A8C1B00D60F3F /* UIResponder+Router.h */,
+				BDFB339E229A8C1B00D60F3F /* UIResponder+Router.m */,
 				5E4138782298E8A000938C3C /* 类目。包含各种类的分类 */,
+				BDFB33A1229A933100D60F3F /* NSObject+Invotation.h */,
+				BDFB33A2229A933100D60F3F /* NSObject+Invotation.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -380,6 +413,24 @@
 				5E4138A322992DD800938C3C /* ViewControllerIntercepter.m */,
 			);
 			path = AspectsIntercepter;
+			sourceTree = "<group>";
+		};
+		BD182D9322998721000F414A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				BD182D9A22998738000F414A /* 0.png */,
+				BD182D9E22998738000F414A /* 1.png */,
+				BD182D9B22998738000F414A /* 2.png */,
+				BD182D9622998738000F414A /* 3.png */,
+				BD182D9522998738000F414A /* 4.png */,
+				BD182D9722998738000F414A /* 5.png */,
+				BD182D9422998738000F414A /* 6.png */,
+				BD182D9822998738000F414A /* 背景.png */,
+				BD182D9C22998738000F414A /* 发光.gif */,
+				BD182D9922998738000F414A /* 礼物.png */,
+				BD182D9D22998738000F414A /* bee.gif */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,16 +537,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD182DA822998738000F414A /* bee.gif in Resources */,
+				BD182DA522998738000F414A /* 0.png in Resources */,
+				BD182DA322998738000F414A /* 背景.png in Resources */,
+				BD182DA622998738000F414A /* 2.png in Resources */,
+				BD182DA122998738000F414A /* 3.png in Resources */,
+				BD182DA422998738000F414A /* 礼物.png in Resources */,
 				5E41387B2298E8A000938C3C /* 第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入 in Resources */,
 				5E41387E2298E8A000938C3C /* 工具类，一些非对象的，而是类方法调用的类 in Resources */,
+				BD182DA722998738000F414A /* 发光.gif in Resources */,
 				5E41387F2298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 in Resources */,
 				5E41387A2298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 in Resources */,
 				5E41383B2298E30C00938C3C /* LaunchScreen.storyboard in Resources */,
 				5E4138382298E30C00938C3C /* Assets.xcassets in Resources */,
+				BD182D9F22998738000F414A /* 6.png in Resources */,
 				5E4138802298E8A000938C3C /* 系统框架。包含导入的系统的框架 in Resources */,
+				BD182DA022998738000F414A /* 4.png in Resources */,
 				5E41387C2298E8A000938C3C /* 模块。包含各个模块的Model,View,Controller,Manager in Resources */,
 				5E4138332298E30B00938C3C /* Main.storyboard in Resources */,
 				5E4138792298E8A000938C3C /* 帮助类。包含网络，数据库，归档，定位等操作类的封装和实现 in Resources */,
+				BD182DA222998738000F414A /* 5.png in Resources */,
+				BD182DA922998738000F414A /* 1.png in Resources */,
 				5E41387D2298E8A000938C3C /* 程序入口。包含AppDelegate,main.c,info.plist文件 in Resources */,
 				5E4138812298E8A000938C3C /* 类目。包含各种类的分类 in Resources */,
 			);
@@ -545,12 +607,14 @@
 			files = (
 				5E4138932298EEF800938C3C /* CakeTreeView.m in Sources */,
 				5E41388D2298EE9300938C3C /* CakeTreeEditViewController.m in Sources */,
+				BDFB33A3229A933100D60F3F /* NSObject+Invotation.m in Sources */,
 				5E4138842298EDB100938C3C /* CakeForestViewController.m in Sources */,
 				5E4138872298EDC500938C3C /* CakeTreeViewController.m in Sources */,
 				5E4138362298E30B00938C3C /* CakeTree.xcdatamodeld in Sources */,
 				5E41383E2298E30C00938C3C /* main.m in Sources */,
 				5E4138A422992DD800938C3C /* ViewControllerIntercepter.m in Sources */,
 				5E4138962298EF0300938C3C /* CakeTreeTicketView.m in Sources */,
+				BDFB33A0229A8C1B00D60F3F /* UIResponder+Router.m in Sources */,
 				5E41388A2298EE1700938C3C /* CakeTreeTicketViewController.m in Sources */,
 				5E41382D2298E30B00938C3C /* AppDelegate.m in Sources */,
 				5E4138992298EF0D00938C3C /* CakeTreeEditView.m in Sources */,

@@ -7,6 +7,9 @@
 //
 
 #import "CakeForestView.h"
+#import "UIResponder+Router.h"
+
+NSString * const kCakeForestMyTreeBtnClick = @"kCakeForestMyTreeBtnClick";
 
 @interface CakeForestView ()
 
@@ -41,7 +44,7 @@
 #pragma mark - event response
 
 - (void)btnClick:(id)sender {
-    [self.targetDelegate eventResponseWithSender:sender];
+    [self.myTreeBtn routerEventWithName:kCakeForestMyTreeBtnClick userInfo:@{}];
 }
 
 #pragma mark - private methods

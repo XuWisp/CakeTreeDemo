@@ -8,12 +8,16 @@
 
 #import "CakeForestViewController.h"
 #import "CakeTreeViewController.h"
+#import "NSObject+Invotation.h"
 
 #import "CakeForestView.h"
+
+extern NSString * const kCakeForestMyTreeBtnClick;
 
 @interface CakeForestViewController () <TargetDelegate>
 
 @property (nonatomic, strong) CakeForestView * mainV;
+@property (nonatomic, strong) NSDictionary * eventStrategy;
 
 @end
 
@@ -55,6 +59,21 @@
 }
 
 #pragma mark - event response
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
+{
+    NSInvocation *invocation = self.eventStrategy[eventName];
+    [invocation setArgument:&userInfo atIndex:2];
+    [invocation invoke];
+
+    
+    // 如果需要让事件继续往上传递，则调用下面的语句
+    // [super routerEventWithName:eventName userInfo:userInfo];
+}
+
+- (void)treeBtnClick:(NSDictionary *)userInfo {
+    CakeTreeViewController *ctVC = [[CakeTreeViewController alloc] init];
+    [self.navigationController pushViewController:ctVC animated:YES];
+}
 
 
 #pragma mark - private methods
@@ -70,5 +89,14 @@
     return _mainV;
 }
 
+- (NSDictionary *)eventStrategy {
+    if (_eventStrategy == nil) {
+        _eventStrategy = @{
+                           kCakeForestMyTreeBtnClick : [self createInvocationWithSelector:@selector(treeBtnClick:)],
+
+                           };
+    }
+    return _eventStrategy;
+}
 
 @end

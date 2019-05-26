@@ -7,12 +7,16 @@
 //
 
 #import "CakeTreeView.h"
+#import "FLAnimatedImageView.h"
+#import "FLAnimatedImage.h"
 
 @interface CakeTreeView ()
 
 @property (nonatomic, strong) UIScrollView *scrollV;
 @property (nonatomic, strong) UIImageView *backgroundImgV;
 @property (nonatomic, strong) UIImageView *giftImgV;
+@property (nonatomic, strong) FLAnimatedImageView *beeGIFImgV;
+
 @property (nonatomic, strong) UIProgressView *progressV;
 @property (nonatomic, strong) UILabel *levelLbl;
 @property (nonatomic, strong) UIButton *ticketBtn;
@@ -50,8 +54,26 @@
         _scrollV = [[UIScrollView alloc] init];
         _scrollV.backgroundColor = [UIColor whiteColor];
         [_scrollV addSubview:self.backgroundImgV];
+        [_scrollV addSubview:self.beeGIFImgV];
     }
     return _scrollV;
+}
+
+- (FLAnimatedImageView *)beeGIFImgV {
+    if (!_beeGIFImgV) {
+        //GIF 转 NSData
+        //Gif 路径
+        NSString *pathForFile = [[NSBundle mainBundle] pathForResource: @"Resources/image/bee" ofType:@"gif"];
+        //转成NSData
+        NSData *dataOfGif = [NSData dataWithContentsOfFile: pathForFile];
+        //初始化FLAnimatedImage对象
+        FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:dataOfGif];
+        //初始化FLAnimatedImageView对象
+        FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
+        //设置GIF图片
+        imageView.animatedImage = image;
+    }
+    return _beeGIFImgV;
 }
 
 @end
