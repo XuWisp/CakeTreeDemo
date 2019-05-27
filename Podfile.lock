@@ -1,32 +1,24 @@
 PODS:
   - Aspects (1.4.1)
-  - FLAnimatedImage (1.0.12)
   - HandyAutoLayout (1.0.0)
   - HandyFrame (1.2.0)
-  - YLGIFImage (0.11)
 
 DEPENDENCIES:
   - Aspects
-  - FLAnimatedImage
   - HandyAutoLayout
   - HandyFrame
-  - YLGIFImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Aspects
-    - FLAnimatedImage
     - HandyAutoLayout
     - HandyFrame
-    - YLGIFImage
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   HandyAutoLayout: f6ef3ab011318f8493fa868d93d9b03ceef4ef90
   HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
-  YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
-PODFILE CHECKSUM: f62575fd40d763a59df1861dc3f9f630f133b043
+PODFILE CHECKSUM: 7a94fb219bb07343a52c65c4c91db6d37ccb5621
 
 COCOAPODS: 1.5.3

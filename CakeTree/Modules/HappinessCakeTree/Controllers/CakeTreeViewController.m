@@ -10,7 +10,13 @@
 
 #import "CakeTreeView.h"
 
+extern NSString * const kCakeTreeLvlUpBtnClick;
+
 @interface CakeTreeViewController ()
+
+@property (nonatomic, strong) CakeTreeView *mainV;
+@property (nonatomic, strong) NSDictionary * eventStrategy;
+@property (nonatomic, assign) NSUInteger level;
 
 @end
 
@@ -21,13 +27,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 只做addSubview的事情
+    [self.view addSubview:self.mainV];
+    [self layoutViewSubviews];
+    [self.mainV addTreeLevelImageByLevel:0];
 }
 
-- (void)viewWillLayoutSubviews
-{
-    [super viewWillLayoutSubviews];
-    // 做布局的事情
+- (void)layoutViewSubviews {
+    [self.mainV fill];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -46,12 +52,40 @@
 
 #pragma mark - event response
 
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
+{
+    NSInvocation *invocation = self.eventStrategy[eventName];
+    [invocation setArgument:&userInfo atIndex:2];
+    [invocation invoke];    
+}
+
+- (void)treeLvlUpBtnClick:(NSDictionary *)userInfo {
+    if (self.level < 6) {
+        self.level++;
+        [self.mainV treeLevelUpToLevel:self.level];
+        return;
+    }
+}
 
 #pragma mark - private methods
 // 正常情况下ViewController里面不应该写这层代码
 
 #pragma mark - getters and setters
 
+- (CakeTreeView *)mainV {
+    if (!_mainV) {
+        _mainV = [[CakeTreeView alloc] init];
+    }
+    return _mainV;
+}
 
+- (NSDictionary *)eventStrategy {
+    if (_eventStrategy == nil) {
+        _eventStrategy = @{
+                           kCakeTreeLvlUpBtnClick : [self createInvocationWithSelector:@selector(treeLvlUpBtnClick:)],
+                           };
+    }
+    return _eventStrategy;
+}
 
 @end

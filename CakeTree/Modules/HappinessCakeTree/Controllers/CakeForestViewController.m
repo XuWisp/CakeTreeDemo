@@ -8,13 +8,12 @@
 
 #import "CakeForestViewController.h"
 #import "CakeTreeViewController.h"
-#import "NSObject+Invotation.h"
 
 #import "CakeForestView.h"
 
 extern NSString * const kCakeForestMyTreeBtnClick;
 
-@interface CakeForestViewController () <TargetDelegate>
+@interface CakeForestViewController ()
 
 @property (nonatomic, strong) CakeForestView * mainV;
 @property (nonatomic, strong) NSDictionary * eventStrategy;
@@ -49,15 +48,6 @@ extern NSString * const kCakeForestMyTreeBtnClick;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - TargetDelegate
-
-- (void)eventResponseWithSender:(id)sender {
-    if ([sender isKindOfClass:[UIButton class]]) {
-        CakeTreeViewController *ctVC = [[CakeTreeViewController alloc] init];
-        [self.navigationController pushViewController:ctVC animated:YES];
-    }
-}
-
 #pragma mark - event response
 - (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
 {
@@ -84,7 +74,6 @@ extern NSString * const kCakeForestMyTreeBtnClick;
 - (CakeForestView *)mainV {
     if (!_mainV) {
         _mainV = [[CakeForestView alloc] init];
-        _mainV.targetDelegate = self;
     }
     return _mainV;
 }
@@ -93,7 +82,6 @@ extern NSString * const kCakeForestMyTreeBtnClick;
     if (_eventStrategy == nil) {
         _eventStrategy = @{
                            kCakeForestMyTreeBtnClick : [self createInvocationWithSelector:@selector(treeBtnClick:)],
-
                            };
     }
     return _eventStrategy;

@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CakeTreeView : UIView
 
+- (void)addTreeLevelImageByLevel:(NSUInteger)level;
+- (void)treeLevelUpToLevel:(NSUInteger)level;
+
 @end
 
 NS_ASSUME_NONNULL_END

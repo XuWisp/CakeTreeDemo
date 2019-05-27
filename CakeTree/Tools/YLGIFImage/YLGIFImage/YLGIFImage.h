@@ -29,7 +29,7 @@
 /**
  Number of loops the image can do before it stops
  */
-@property (nonatomic, readonly) NSUInteger loopCount;
+@property (nonatomic, assign) NSUInteger loopCount;
 
 - (UIImage*)getFrameWithIndex:(NSUInteger)idx;
 

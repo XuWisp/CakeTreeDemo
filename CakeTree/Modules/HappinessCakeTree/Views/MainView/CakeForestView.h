@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CakeForestView : UIView
 
-@property (nonatomic, weak) id <TargetDelegate> _Nullable targetDelegate;
 @property (nonatomic, weak) id <UITableViewDataSource> _Nullable tvDataSource;
 @property (nonatomic, weak) id <UITableViewDelegate> _Nullable tvDelegate;
 

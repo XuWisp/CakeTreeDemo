@@ -4,8 +4,6 @@ inhibit_all_warnings!
 
 pod 'HandyAutoLayout'
 pod 'HandyFrame'
-pod 'YLGIFImage'
-pod 'FLAnimatedImage'
 pod 'Aspects'
 
 end
