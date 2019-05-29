@@ -14,7 +14,6 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
 
 @interface CakeTreeView ()
 
-@property (nonatomic, strong) UIScrollView *scrollV;
 @property (nonatomic, strong) UIImageView *backgroundImgV;
 @property (nonatomic, strong) NSArray *lvlImgVArr;
 @property (nonatomic, strong) UIImageView *giftImgV;
@@ -38,34 +37,30 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
     self = [super init];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
-        [self addSubview:self.scrollV];
+        [self addSubview:self.backgroundImgV];
+        [self addSubview:self.giftImgV];
+        [self addSubview:self.lvlUpGIFImgV];
+        [self addSubview:self.beeGIFImgV];
+        
         [self addSubview:self.progressV];
         [self addSubview:self.levelLbl];
         [self addSubview:self.ticketBtn];
         [self addSubview:self.lvlUpBtn];
-        
-        [self.scrollV addSubview:self.backgroundImgV];
-        [self.scrollV addSubview:self.giftImgV];
-        [self.scrollV addSubview:self.lvlUpGIFImgV];
-        [self.scrollV addSubview:self.beeGIFImgV];
     }
     return self;
 }
 
 - (void)layoutSubviews {
-    [self.scrollV fill];
-    
     [self.backgroundImgV fill];
-    [self.backgroundImgV setCt_height:kScreenW*1334/750];
-
-    self.scrollV.contentSize = self.backgroundImgV.ct_size;
+    [self.backgroundImgV setCt_height:kScreenW*1623/750];
     
     [self.beeGIFImgV fill];
     [self.beeGIFImgV setCt_height:kScreenW*1334/750];
     self.giftImgV.frame = self.beeGIFImgV.frame;
     self.lvlUpGIFImgV.frame = self.beeGIFImgV.frame;
-
+    
     [self.lvlUpBtn fill];
+    [self.lvlUpBtn setSize:CGSizeMake(375, 300) screenType:(UIScreenType_iPhone6)];
 }
 
 #pragma mark - delegate
@@ -87,14 +82,14 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
     for (int i= 0; i<=level; i++) {
         UIImageView *imgV = [[UIImageView alloc] initWithFrame:frame];
         imgV.image = [UIImage imageNamed:self.lvlImgVArr[i]];
-        [self.scrollV insertSubview:imgV belowSubview:self.giftImgV];
+        [self insertSubview:imgV belowSubview:self.giftImgV];
     }
 }
 
 - (void)treeLevelUpToLevel:(NSUInteger)level {
     UIImageView *imgV = [[UIImageView alloc] initWithFrame:self.giftImgV.frame];
     imgV.image = [UIImage imageNamed:self.lvlImgVArr[level]];
-    [self.scrollV insertSubview:imgV belowSubview:self.giftImgV];
+    [self insertSubview:imgV belowSubview:self.giftImgV];
     imgV.alpha= 0;
     YLGIFImage *gifImage = (YLGIFImage *)[YLGIFImage imageNamed:@"lvlup.gif"];
     gifImage.loopCount = 1;
@@ -105,14 +100,6 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
 }
 
 #pragma mark - getters and setters
-
-- (UIScrollView *)scrollV {
-    if (!_scrollV) {
-        _scrollV = [[UIScrollView alloc] init];
-        _scrollV.backgroundColor = [UIColor whiteColor];
-    }
-    return _scrollV;
-}
 
 - (UIImageView *)backgroundImgV {
     if (!_backgroundImgV) {

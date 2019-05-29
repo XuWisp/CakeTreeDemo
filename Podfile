@@ -5,6 +5,10 @@ inhibit_all_warnings!
 pod 'HandyAutoLayout'
 pod 'HandyFrame'
 pod 'Aspects'
+pod 'FMDB'
+pod "SDWebImage"
+pod 'AUULayout'
+
 
 end
 

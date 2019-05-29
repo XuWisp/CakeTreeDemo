@@ -36,6 +36,11 @@ extern NSString * const kCakeTreeLvlUpBtnClick;
     [self.mainV fill];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //[self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     // Notification的监听之类的事情

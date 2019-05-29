@@ -10,6 +10,7 @@
 #import "CakeTreeViewController.h"
 
 #import "CakeForestView.h"
+#import "CakeForestHeaderView.h"
 
 extern NSString * const kCakeForestMyTreeBtnClick;
 
@@ -29,6 +30,11 @@ extern NSString * const kCakeForestMyTreeBtnClick;
     [super viewDidLoad];
     // 只做addSubview的事情
     [self.view addSubview:self.mainV];
+    // 初始化
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [MomentUtil initMomentData];
+    });
+
 }
 
 - (void)viewWillLayoutSubviews
@@ -36,6 +42,11 @@ extern NSString * const kCakeForestMyTreeBtnClick;
     [super viewWillLayoutSubviews];
     // 做布局的事情
     [self.mainV fill];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -61,10 +72,11 @@ extern NSString * const kCakeForestMyTreeBtnClick;
 }
 
 - (void)treeBtnClick:(NSDictionary *)userInfo {
-    CakeTreeViewController *ctVC = [[CakeTreeViewController alloc] init];
-    [self.navigationController pushViewController:ctVC animated:YES];
-}
+    [self.mainV configWithData:nil];
 
+//    CakeTreeViewController *ctVC = [[CakeTreeViewController alloc] init];
+//    [self.navigationController pushViewController:ctVC animated:YES];
+}
 
 #pragma mark - private methods
 // 正常情况下ViewController里面不应该写这层代码
