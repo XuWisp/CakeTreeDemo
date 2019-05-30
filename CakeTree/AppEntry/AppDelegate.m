@@ -21,6 +21,7 @@
     CakeForestViewController *cfVC = [[CakeForestViewController alloc] init];
     UINavigationController *naviC = [[UINavigationController alloc] initWithRootViewController:cfVC];
     self.window.rootViewController = naviC;
+    [AUULayoutAssistant setNeedAutoCoverRepetitionLayoutConstrants:YES];
     return YES;
 }
 

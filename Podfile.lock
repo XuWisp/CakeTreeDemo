@@ -9,6 +9,8 @@ PODS:
   - SDWebImage (5.0.3):
     - SDWebImage/Core (= 5.0.3)
   - SDWebImage/Core (5.0.3)
+  - ZLPhotoBrowser (3.0.4):
+    - SDWebImage (~> 5.0.2)
 
 DEPENDENCIES:
   - Aspects
@@ -17,6 +19,7 @@ DEPENDENCIES:
   - HandyAutoLayout
   - HandyFrame
   - SDWebImage
+  - ZLPhotoBrowser
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -26,6 +29,7 @@ SPEC REPOS:
     - HandyAutoLayout
     - HandyFrame
     - SDWebImage
+    - ZLPhotoBrowser
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
@@ -34,7 +38,8 @@ SPEC CHECKSUMS:
   HandyAutoLayout: f6ef3ab011318f8493fa868d93d9b03ceef4ef90
   HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
   SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
+  ZLPhotoBrowser: 74f02c52b369bab0bfd7db225faf4e77fcf4d59a
 
-PODFILE CHECKSUM: 52773e5105bccc0fb92b8df415b673e3e8193874
+PODFILE CHECKSUM: 4d0cace7144bab749e2c98a48618cbe4df1e379f
 
 COCOAPODS: 1.5.3
