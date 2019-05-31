@@ -188,8 +188,8 @@
 		BD12EE9D229CE759001F42B3 /* UILabel+String.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+String.m"; sourceTree = "<group>"; };
 		BD12EEA3229D0C1C001F42B3 /* CakeForestHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeForestHeaderView.h; sourceTree = "<group>"; };
 		BD12EEA4229D0C1C001F42B3 /* CakeForestHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeForestHeaderView.m; sourceTree = "<group>"; };
-		BD12EEA6229D1D21001F42B3 /* CakeForestTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CakeForestTableViewCell.h; path = CakeTree/Modules/HappinessCakeTree/CakeForest/Views/CakeForestTableViewCell.h; sourceTree = SOURCE_ROOT; };
-		BD12EEA7229D1D21001F42B3 /* CakeForestTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CakeForestTableViewCell.m; path = CakeTree/Modules/HappinessCakeTree/CakeForest/Views/CakeForestTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		BD12EEA6229D1D21001F42B3 /* CakeForestTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CakeForestTableViewCell.h; path = CakeTree/Modules/HappinessCakeTree/Views/Cell/CakeForestTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		BD12EEA7229D1D21001F42B3 /* CakeForestTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CakeForestTableViewCell.m; path = CakeTree/Modules/HappinessCakeTree/Views/Cell/CakeForestTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		BD13EA31229E1E1C00181706 /* CTImageListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTImageListView.h; sourceTree = "<group>"; };
 		BD13EA32229E1E1C00181706 /* CTImageListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTImageListView.m; sourceTree = "<group>"; };
 		BD13EA35229E1E9500181706 /* CTImagePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTImagePreviewView.h; sourceTree = "<group>"; };
@@ -464,10 +464,10 @@
 		5E4138672298E8A000938C3C /* HappinessCakeTree */ = {
 			isa = PBXGroup;
 			children = (
-				BD95932F229FB32F00E59F7C /* CakeForest */,
-				BD95933F229FB3C300E59F7C /* CakeTree */,
-				BD959346229FB3F700E59F7C /* CakeTreeTicket */,
-				BD95934D229FB42500E59F7C /* CakeTreeEdit */,
+				BD95953A22A110A600E59F7C /* APIManagers */,
+				BD95953B22A110A600E59F7C /* Controllers */,
+				BD95953C22A110A600E59F7C /* Reformers */,
+				BD95953D22A110A600E59F7C /* Views */,
 			);
 			path = HappinessCakeTree;
 			sourceTree = "<group>";
@@ -662,184 +662,6 @@
 			path = image;
 			sourceTree = "<group>";
 		};
-		BD95932F229FB32F00E59F7C /* CakeForest */ = {
-			isa = PBXGroup;
-			children = (
-				BD959330229FB32F00E59F7C /* APIManagers */,
-				BD959331229FB32F00E59F7C /* Reformers */,
-				BD959332229FB32F00E59F7C /* Controllers */,
-				BD959333229FB32F00E59F7C /* Views */,
-			);
-			path = CakeForest;
-			sourceTree = "<group>";
-		};
-		BD959330229FB32F00E59F7C /* APIManagers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIManagers;
-			sourceTree = "<group>";
-		};
-		BD959331229FB32F00E59F7C /* Reformers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reformers;
-			sourceTree = "<group>";
-		};
-		BD959332229FB32F00E59F7C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				5E4138822298EDB100938C3C /* CakeForestViewController.h */,
-				5E4138832298EDB100938C3C /* CakeForestViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		BD959333229FB32F00E59F7C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				5E41388E2298EEE800938C3C /* CakeForestView.h */,
-				5E41388F2298EEE800938C3C /* CakeForestView.m */,
-				BD12EEA6229D1D21001F42B3 /* CakeForestTableViewCell.h */,
-				BD12EEA7229D1D21001F42B3 /* CakeForestTableViewCell.m */,
-				BD13EA3E229E2CA100181706 /* MomentKit */,
-				BD13EA34229E1E7200181706 /* ImageList */,
-				BD12EEA3229D0C1C001F42B3 /* CakeForestHeaderView.h */,
-				BD12EEA4229D0C1C001F42B3 /* CakeForestHeaderView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BD95933F229FB3C300E59F7C /* CakeTree */ = {
-			isa = PBXGroup;
-			children = (
-				BD959340229FB3C300E59F7C /* APIManagers */,
-				BD959341229FB3C300E59F7C /* Reformers */,
-				BD959342229FB3C300E59F7C /* Controllers */,
-				BD959343229FB3C300E59F7C /* Views */,
-			);
-			path = CakeTree;
-			sourceTree = "<group>";
-		};
-		BD959340229FB3C300E59F7C /* APIManagers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIManagers;
-			sourceTree = "<group>";
-		};
-		BD959341229FB3C300E59F7C /* Reformers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reformers;
-			sourceTree = "<group>";
-		};
-		BD959342229FB3C300E59F7C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				5E4138852298EDC500938C3C /* CakeTreeViewController.h */,
-				5E4138862298EDC500938C3C /* CakeTreeViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		BD959343229FB3C300E59F7C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				5E4138912298EEF800938C3C /* CakeTreeView.h */,
-				5E4138922298EEF800938C3C /* CakeTreeView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BD959346229FB3F700E59F7C /* CakeTreeTicket */ = {
-			isa = PBXGroup;
-			children = (
-				BD959347229FB3F700E59F7C /* APIManagers */,
-				BD959348229FB3F700E59F7C /* Reformers */,
-				BD959349229FB3F700E59F7C /* Controllers */,
-				BD95934A229FB3F700E59F7C /* Views */,
-			);
-			path = CakeTreeTicket;
-			sourceTree = "<group>";
-		};
-		BD959347229FB3F700E59F7C /* APIManagers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIManagers;
-			sourceTree = "<group>";
-		};
-		BD959348229FB3F700E59F7C /* Reformers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reformers;
-			sourceTree = "<group>";
-		};
-		BD959349229FB3F700E59F7C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				5E4138882298EE1700938C3C /* CakeTreeTicketViewController.h */,
-				5E4138892298EE1700938C3C /* CakeTreeTicketViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		BD95934A229FB3F700E59F7C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				5E4138942298EF0300938C3C /* CakeTreeTicketView.h */,
-				5E4138952298EF0300938C3C /* CakeTreeTicketView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BD95934D229FB42500E59F7C /* CakeTreeEdit */ = {
-			isa = PBXGroup;
-			children = (
-				BD95934E229FB42500E59F7C /* APIManagers */,
-				BD95934F229FB42500E59F7C /* Reformers */,
-				BD959350229FB42500E59F7C /* Controllers */,
-				BD959351229FB42500E59F7C /* Views */,
-			);
-			path = CakeTreeEdit;
-			sourceTree = "<group>";
-		};
-		BD95934E229FB42500E59F7C /* APIManagers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIManagers;
-			sourceTree = "<group>";
-		};
-		BD95934F229FB42500E59F7C /* Reformers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reformers;
-			sourceTree = "<group>";
-		};
-		BD959350229FB42500E59F7C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				5E41388B2298EE9300938C3C /* CakeTreeEditViewController.h */,
-				5E41388C2298EE9300938C3C /* CakeTreeEditViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		BD959351229FB42500E59F7C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				5E4138972298EF0D00938C3C /* CakeTreeEditView.h */,
-				5E4138982298EF0D00938C3C /* CakeTreeEditView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		BD959354229FD58800E59F7C /* LRAnimationProgress */ = {
 			isa = PBXGroup;
 			children = (
@@ -960,6 +782,72 @@
 				BD95950A22A0C74000E59F7C /* ZLPhotoBrowserCell.xib */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		BD95953A22A110A600E59F7C /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		BD95953B22A110A600E59F7C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E4138822298EDB100938C3C /* CakeForestViewController.h */,
+				5E4138832298EDB100938C3C /* CakeForestViewController.m */,
+				5E4138852298EDC500938C3C /* CakeTreeViewController.h */,
+				5E4138862298EDC500938C3C /* CakeTreeViewController.m */,
+				5E4138882298EE1700938C3C /* CakeTreeTicketViewController.h */,
+				5E4138892298EE1700938C3C /* CakeTreeTicketViewController.m */,
+				5E41388B2298EE9300938C3C /* CakeTreeEditViewController.h */,
+				5E41388C2298EE9300938C3C /* CakeTreeEditViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BD95953C22A110A600E59F7C /* Reformers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reformers;
+			sourceTree = "<group>";
+		};
+		BD95953D22A110A600E59F7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD95953E22A110A600E59F7C /* Cell */,
+				BD95953F22A110A600E59F7C /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD95953E22A110A600E59F7C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD12EEA6229D1D21001F42B3 /* CakeForestTableViewCell.h */,
+				BD12EEA7229D1D21001F42B3 /* CakeForestTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BD95953F22A110A600E59F7C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				5E41388E2298EEE800938C3C /* CakeForestView.h */,
+				5E41388F2298EEE800938C3C /* CakeForestView.m */,
+				5E4138912298EEF800938C3C /* CakeTreeView.h */,
+				5E4138922298EEF800938C3C /* CakeTreeView.m */,
+				5E4138942298EF0300938C3C /* CakeTreeTicketView.h */,
+				5E4138952298EF0300938C3C /* CakeTreeTicketView.m */,
+				5E4138972298EF0D00938C3C /* CakeTreeEditView.h */,
+				5E4138982298EF0D00938C3C /* CakeTreeEditView.m */,
+				BD13EA3E229E2CA100181706 /* MomentKit */,
+				BD13EA34229E1E7200181706 /* ImageList */,
+				BD12EEA3229D0C1C001F42B3 /* CakeForestHeaderView.h */,
+				BD12EEA4229D0C1C001F42B3 /* CakeForestHeaderView.m */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
