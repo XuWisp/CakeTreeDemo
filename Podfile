@@ -8,7 +8,7 @@ pod 'Aspects'
 pod 'FMDB'
 pod "SDWebImage"
 pod 'AUULayout'
-pod 'ZLPhotoBrowser'
+#pod 'ZLPhotoBrowser', '~> 3.0.4'
 
 end
 

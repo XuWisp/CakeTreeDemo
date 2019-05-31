@@ -86,7 +86,7 @@ NSString * const kCakeForestPunchBtnClick = @"kCakeForestPunchBtnClick";
 - (UIButton *)punchBtn {
     if (!_punchBtn) {
         _punchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _punchBtn.backgroundColor = [UIColor redColor];
+        [_punchBtn setBackgroundImage:[UIImage imageNamed:@"button_daka"] forState:(UIControlStateNormal)];
         [_punchBtn addTarget:self action:@selector(punchBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _punchBtn;

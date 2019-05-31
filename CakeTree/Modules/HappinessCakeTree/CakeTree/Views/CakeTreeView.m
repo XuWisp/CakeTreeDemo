@@ -94,7 +94,7 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
     V[_pv_backgroundView[19]] [17] [_levelLbl[18]] [7] [_ticketBtn[39]] [@(20+KMagrinBottom)].end();
     
     self.progressV.edge(UIEdgeInsetsMake(2, 2, 2, 2));
-    self.lvlUpBtn.edge(UIEdgeInsetsMake(300, 2, 300, 2));
+    self.lvlUpBtn.edge(UIEdgeInsetsMake(200, 2, 200, 2));
     self.pv_backgroundView.layer.cornerRadius = 19/2;
     self.progressV.progressCornerRadius = 15/2;
 }
@@ -227,7 +227,7 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
 - (UIButton *)ticketBtn {
     if (!_ticketBtn) {
         _ticketBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-        _ticketBtn.backgroundColor = [UIColor lightGrayColor];
+        [_ticketBtn setBackgroundImage:[UIImage imageNamed:@""] forState:(UIControlStateNormal)];
     }
     return _ticketBtn;
 }

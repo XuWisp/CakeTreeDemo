@@ -1,1 +1,0 @@
-../../../ZLPhotoBrowser/ZLPhotoBrowser/PhotoBrowser/Animation/ZLInteractiveAnimateProtocol.h
