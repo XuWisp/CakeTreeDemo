@@ -67,17 +67,33 @@
 		BD182DA722998738000F414A /* lvlup.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9C22998738000F414A /* lvlup.gif */; };
 		BD182DA822998738000F414A /* bee.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9D22998738000F414A /* bee.gif */; };
 		BD182DA922998738000F414A /* lvl1.png in Resources */ = {isa = PBXBuildFile; fileRef = BD182D9E22998738000F414A /* lvl1.png */; };
+		BD5E0C9822A4B4E000626994 /* ct_forest.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0C9722A4B4E000626994 /* ct_forest.png */; };
+		BD5E0C9F22A4B4F600626994 /* ct_qd.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0C9922A4B4F600626994 /* ct_qd.png */; };
+		BD5E0CA022A4B4F600626994 /* ct_icon_great_unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0C9A22A4B4F600626994 /* ct_icon_great_unselect.png */; };
+		BD5E0CA122A4B4F600626994 /* ct_myforest.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0C9B22A4B4F600626994 /* ct_myforest.png */; };
+		BD5E0CA222A4B4F600626994 /* nickViewTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0C9C22A4B4F600626994 /* nickViewTitle.png */; };
+		BD5E0CA322A4B4F600626994 /* ct_yhq.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0C9D22A4B4F600626994 /* ct_yhq.png */; };
+		BD5E0CA422A4B4F600626994 /* nickView_placehold.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0C9E22A4B4F600626994 /* nickView_placehold.png */; };
+		BD5E0CA722A4E98500626994 /* CakeTreeNickView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E0CA622A4E98500626994 /* CakeTreeNickView.m */; };
+		BD5E0CA922A4F62E00626994 /* ct_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0CA822A4F62D00626994 /* ct_cancel.png */; };
+		BD5E0CAC22A4FFA800626994 /* CakeTreeEditSaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E0CAB22A4FFA800626994 /* CakeTreeEditSaveView.m */; };
+		BD5E0CAE22A5042800626994 /* editSaveViewTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0CAD22A5042800626994 /* editSaveViewTitle.png */; };
+		BD5E0CB422A50C3800626994 /* UIViewController+CakeTree.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E0CB322A50C3800626994 /* UIViewController+CakeTree.m */; };
+		BD5E0CB722A6347500626994 /* CTImgCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E0CB622A6347500626994 /* CTImgCollectionViewCell.m */; };
+		BD5E0CBA22A63D4600626994 /* CTAddImgCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E0CB922A63D4600626994 /* CTAddImgCollectionViewCell.m */; };
+		BD5E0CBC22A64B6F00626994 /* ct_reward.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5E0CBB22A64B6F00626994 /* ct_reward.png */; };
+		BD5E0CBF22A64F9600626994 /* CakeTreeAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E0CBE22A64F9600626994 /* CakeTreeAwardViewController.m */; };
+		BD5E0CC222A64FB000626994 /* CakeTreeAwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E0CC122A64FB000626994 /* CakeTreeAwardView.m */; };
 		BD959357229FD59200E59F7C /* LRAnimationProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BD959356229FD59200E59F7C /* LRAnimationProgress.m */; };
-		BD95945622A0BFC100E59F7C /* button_notsave.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944822A0BFBF00E59F7C /* button_notsave.png */; };
-		BD95945722A0BFC100E59F7C /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944922A0BFBF00E59F7C /* icon_back.png */; };
-		BD95945922A0BFC100E59F7C /* icon_add.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944B22A0BFC000E59F7C /* icon_add.png */; };
-		BD95945A22A0BFC100E59F7C /* button_daka.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944C22A0BFC000E59F7C /* button_daka.png */; };
-		BD95945B22A0BFC100E59F7C /* pic_yhq.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944D22A0BFC000E59F7C /* pic_yhq.png */; };
-		BD95945C22A0BFC100E59F7C /* icon_great.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944E22A0BFC000E59F7C /* icon_great.png */; };
-		BD95945E22A0BFC100E59F7C /* button_fabu.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945022A0BFC000E59F7C /* button_fabu.png */; };
-		BD95945F22A0BFC100E59F7C /* button_save.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945122A0BFC100E59F7C /* button_save.png */; };
-		BD95946122A0BFC100E59F7C /* pic_fabu.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945322A0BFC100E59F7C /* pic_fabu.png */; };
-		BD95946322A0BFC100E59F7C /* icon_closed.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945522A0BFC100E59F7C /* icon_closed.png */; };
+		BD95945622A0BFC100E59F7C /* ct_notsave.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944822A0BFBF00E59F7C /* ct_notsave.png */; };
+		BD95945722A0BFC100E59F7C /* ct_icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944922A0BFBF00E59F7C /* ct_icon_back.png */; };
+		BD95945922A0BFC100E59F7C /* ct_icon_add.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944B22A0BFC000E59F7C /* ct_icon_add.png */; };
+		BD95945A22A0BFC100E59F7C /* ct_daka.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944C22A0BFC000E59F7C /* ct_daka.png */; };
+		BD95945C22A0BFC100E59F7C /* ct_icon_great.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95944E22A0BFC000E59F7C /* ct_icon_great.png */; };
+		BD95945E22A0BFC100E59F7C /* ct_fabuBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945022A0BFC000E59F7C /* ct_fabuBtn.png */; };
+		BD95945F22A0BFC100E59F7C /* ct_save.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945122A0BFC100E59F7C /* ct_save.png */; };
+		BD95946122A0BFC100E59F7C /* ct_fabuImg.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945322A0BFC100E59F7C /* ct_fabuImg.png */; };
+		BD95946322A0BFC100E59F7C /* ct_icon_closed.png in Resources */ = {isa = PBXBuildFile; fileRef = BD95945522A0BFC100E59F7C /* ct_icon_closed.png */; };
 		BD95951622A0C74000E59F7C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BD9594CF22A0C74000E59F7C /* LICENSE */; };
 		BD95951722A0C74000E59F7C /* ZLBigImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9594D422A0C74000E59F7C /* ZLBigImageCell.m */; };
 		BD95951822A0C74000E59F7C /* ZLAlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9594D522A0C74000E59F7C /* ZLAlbumListController.m */; };
@@ -237,18 +253,41 @@
 		BD182D9C22998738000F414A /* lvlup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lvlup.gif; sourceTree = "<group>"; };
 		BD182D9D22998738000F414A /* bee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bee.gif; sourceTree = "<group>"; };
 		BD182D9E22998738000F414A /* lvl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lvl1.png; sourceTree = "<group>"; };
+		BD5E0C9722A4B4E000626994 /* ct_forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_forest.png; sourceTree = "<group>"; };
+		BD5E0C9922A4B4F600626994 /* ct_qd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_qd.png; sourceTree = "<group>"; };
+		BD5E0C9A22A4B4F600626994 /* ct_icon_great_unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_icon_great_unselect.png; sourceTree = "<group>"; };
+		BD5E0C9B22A4B4F600626994 /* ct_myforest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_myforest.png; sourceTree = "<group>"; };
+		BD5E0C9C22A4B4F600626994 /* nickViewTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nickViewTitle.png; sourceTree = "<group>"; };
+		BD5E0C9D22A4B4F600626994 /* ct_yhq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ct_yhq.png; path = "../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/71003350e3dad25a21948775abcf1c36/Message/MessageTemp/a3aa26ddc9225fd545ab805dc48326b3/File/动画元素750_2/ct_yhq.png"; sourceTree = "<group>"; };
+		BD5E0C9E22A4B4F600626994 /* nickView_placehold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nickView_placehold.png; sourceTree = "<group>"; };
+		BD5E0CA522A4E98500626994 /* CakeTreeNickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeNickView.h; sourceTree = "<group>"; };
+		BD5E0CA622A4E98500626994 /* CakeTreeNickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeNickView.m; sourceTree = "<group>"; };
+		BD5E0CA822A4F62D00626994 /* ct_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_cancel.png; sourceTree = "<group>"; };
+		BD5E0CAA22A4FFA800626994 /* CakeTreeEditSaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeEditSaveView.h; sourceTree = "<group>"; };
+		BD5E0CAB22A4FFA800626994 /* CakeTreeEditSaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeEditSaveView.m; sourceTree = "<group>"; };
+		BD5E0CAD22A5042800626994 /* editSaveViewTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editSaveViewTitle.png; sourceTree = "<group>"; };
+		BD5E0CB222A50C3800626994 /* UIViewController+CakeTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CakeTree.h"; sourceTree = "<group>"; };
+		BD5E0CB322A50C3800626994 /* UIViewController+CakeTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CakeTree.m"; sourceTree = "<group>"; };
+		BD5E0CB522A6347500626994 /* CTImgCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTImgCollectionViewCell.h; sourceTree = "<group>"; };
+		BD5E0CB622A6347500626994 /* CTImgCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTImgCollectionViewCell.m; sourceTree = "<group>"; };
+		BD5E0CB822A63D4600626994 /* CTAddImgCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTAddImgCollectionViewCell.h; sourceTree = "<group>"; };
+		BD5E0CB922A63D4600626994 /* CTAddImgCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTAddImgCollectionViewCell.m; sourceTree = "<group>"; };
+		BD5E0CBB22A64B6F00626994 /* ct_reward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_reward.png; sourceTree = "<group>"; };
+		BD5E0CBD22A64F9600626994 /* CakeTreeAwardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeAwardViewController.h; sourceTree = "<group>"; };
+		BD5E0CBE22A64F9600626994 /* CakeTreeAwardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeAwardViewController.m; sourceTree = "<group>"; };
+		BD5E0CC022A64FB000626994 /* CakeTreeAwardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeTreeAwardView.h; sourceTree = "<group>"; };
+		BD5E0CC122A64FB000626994 /* CakeTreeAwardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeTreeAwardView.m; sourceTree = "<group>"; };
 		BD959355229FD59200E59F7C /* LRAnimationProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAnimationProgress.h; sourceTree = "<group>"; };
 		BD959356229FD59200E59F7C /* LRAnimationProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAnimationProgress.m; sourceTree = "<group>"; };
-		BD95944822A0BFBF00E59F7C /* button_notsave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_notsave.png; sourceTree = "<group>"; };
-		BD95944922A0BFBF00E59F7C /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
-		BD95944B22A0BFC000E59F7C /* icon_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_add.png; sourceTree = "<group>"; };
-		BD95944C22A0BFC000E59F7C /* button_daka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_daka.png; sourceTree = "<group>"; };
-		BD95944D22A0BFC000E59F7C /* pic_yhq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_yhq.png; sourceTree = "<group>"; };
-		BD95944E22A0BFC000E59F7C /* icon_great.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_great.png; sourceTree = "<group>"; };
-		BD95945022A0BFC000E59F7C /* button_fabu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_fabu.png; sourceTree = "<group>"; };
-		BD95945122A0BFC100E59F7C /* button_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_save.png; sourceTree = "<group>"; };
-		BD95945322A0BFC100E59F7C /* pic_fabu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_fabu.png; sourceTree = "<group>"; };
-		BD95945522A0BFC100E59F7C /* icon_closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_closed.png; sourceTree = "<group>"; };
+		BD95944822A0BFBF00E59F7C /* ct_notsave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_notsave.png; sourceTree = "<group>"; };
+		BD95944922A0BFBF00E59F7C /* ct_icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_icon_back.png; sourceTree = "<group>"; };
+		BD95944B22A0BFC000E59F7C /* ct_icon_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_icon_add.png; sourceTree = "<group>"; };
+		BD95944C22A0BFC000E59F7C /* ct_daka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_daka.png; sourceTree = "<group>"; };
+		BD95944E22A0BFC000E59F7C /* ct_icon_great.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_icon_great.png; sourceTree = "<group>"; };
+		BD95945022A0BFC000E59F7C /* ct_fabuBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_fabuBtn.png; sourceTree = "<group>"; };
+		BD95945122A0BFC100E59F7C /* ct_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_save.png; sourceTree = "<group>"; };
+		BD95945322A0BFC100E59F7C /* ct_fabuImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_fabuImg.png; sourceTree = "<group>"; };
+		BD95945522A0BFC100E59F7C /* ct_icon_closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_icon_closed.png; sourceTree = "<group>"; };
 		BD9594CF22A0C74000E59F7C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BD9594D222A0C74000E59F7C /* ZLCustomCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCustomCamera.h; sourceTree = "<group>"; };
 		BD9594D322A0C74000E59F7C /* ZLPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoBrowser.h; sourceTree = "<group>"; };
@@ -524,6 +563,8 @@
 				5E4138782298E8A000938C3C /* 类目。包含各种类的分类 */,
 				BD12EE9C229CE759001F42B3 /* UILabel+String.h */,
 				BD12EE9D229CE759001F42B3 /* UILabel+String.m */,
+				BD5E0CB222A50C3800626994 /* UIViewController+CakeTree.h */,
+				BD5E0CB322A50C3800626994 /* UIViewController+CakeTree.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -636,16 +677,25 @@
 		BD182D9322998721000F414A /* image */ = {
 			isa = PBXGroup;
 			children = (
-				BD95944C22A0BFC000E59F7C /* button_daka.png */,
-				BD95945022A0BFC000E59F7C /* button_fabu.png */,
-				BD95944822A0BFBF00E59F7C /* button_notsave.png */,
-				BD95945122A0BFC100E59F7C /* button_save.png */,
-				BD95944B22A0BFC000E59F7C /* icon_add.png */,
-				BD95944922A0BFBF00E59F7C /* icon_back.png */,
-				BD95945522A0BFC100E59F7C /* icon_closed.png */,
-				BD95944E22A0BFC000E59F7C /* icon_great.png */,
-				BD95945322A0BFC100E59F7C /* pic_fabu.png */,
-				BD95944D22A0BFC000E59F7C /* pic_yhq.png */,
+				BD95944C22A0BFC000E59F7C /* ct_daka.png */,
+				BD5E0CA822A4F62D00626994 /* ct_cancel.png */,
+				BD5E0C9722A4B4E000626994 /* ct_forest.png */,
+				BD5E0CAD22A5042800626994 /* editSaveViewTitle.png */,
+				BD95945022A0BFC000E59F7C /* ct_fabuBtn.png */,
+				BD5E0C9E22A4B4F600626994 /* nickView_placehold.png */,
+				BD5E0C9C22A4B4F600626994 /* nickViewTitle.png */,
+				BD5E0C9922A4B4F600626994 /* ct_qd.png */,
+				BD5E0C9A22A4B4F600626994 /* ct_icon_great_unselect.png */,
+				BD5E0C9B22A4B4F600626994 /* ct_myforest.png */,
+				BD5E0C9D22A4B4F600626994 /* ct_yhq.png */,
+				BD95944822A0BFBF00E59F7C /* ct_notsave.png */,
+				BD95945122A0BFC100E59F7C /* ct_save.png */,
+				BD5E0CBB22A64B6F00626994 /* ct_reward.png */,
+				BD95944B22A0BFC000E59F7C /* ct_icon_add.png */,
+				BD95944922A0BFBF00E59F7C /* ct_icon_back.png */,
+				BD95945522A0BFC100E59F7C /* ct_icon_closed.png */,
+				BD95944E22A0BFC000E59F7C /* ct_icon_great.png */,
+				BD95945322A0BFC100E59F7C /* ct_fabuImg.png */,
 				BD12EE9A229CCE2B001F42B3 /* caketree_background.png */,
 				BD13EA5A229E328D00181706 /* bg_forest.png */,
 				BD182D9A22998738000F414A /* lvl0.png */,
@@ -802,6 +852,8 @@
 				5E4138892298EE1700938C3C /* CakeTreeTicketViewController.m */,
 				5E41388B2298EE9300938C3C /* CakeTreeEditViewController.h */,
 				5E41388C2298EE9300938C3C /* CakeTreeEditViewController.m */,
+				BD5E0CBD22A64F9600626994 /* CakeTreeAwardViewController.h */,
+				BD5E0CBE22A64F9600626994 /* CakeTreeAwardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -816,6 +868,7 @@
 		BD95953D22A110A600E59F7C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BD95954022A1129100E59F7C /* Tool */,
 				BD95953E22A110A600E59F7C /* Cell */,
 				BD95953F22A110A600E59F7C /* MainView */,
 			);
@@ -827,6 +880,10 @@
 			children = (
 				BD12EEA6229D1D21001F42B3 /* CakeForestTableViewCell.h */,
 				BD12EEA7229D1D21001F42B3 /* CakeForestTableViewCell.m */,
+				BD5E0CB522A6347500626994 /* CTImgCollectionViewCell.h */,
+				BD5E0CB622A6347500626994 /* CTImgCollectionViewCell.m */,
+				BD5E0CB822A63D4600626994 /* CTAddImgCollectionViewCell.h */,
+				BD5E0CB922A63D4600626994 /* CTAddImgCollectionViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -842,12 +899,25 @@
 				5E4138952298EF0300938C3C /* CakeTreeTicketView.m */,
 				5E4138972298EF0D00938C3C /* CakeTreeEditView.h */,
 				5E4138982298EF0D00938C3C /* CakeTreeEditView.m */,
+				BD5E0CC022A64FB000626994 /* CakeTreeAwardView.h */,
+				BD5E0CC122A64FB000626994 /* CakeTreeAwardView.m */,
 				BD13EA3E229E2CA100181706 /* MomentKit */,
 				BD13EA34229E1E7200181706 /* ImageList */,
 				BD12EEA3229D0C1C001F42B3 /* CakeForestHeaderView.h */,
 				BD12EEA4229D0C1C001F42B3 /* CakeForestHeaderView.m */,
+				BD5E0CA522A4E98500626994 /* CakeTreeNickView.h */,
+				BD5E0CA622A4E98500626994 /* CakeTreeNickView.m */,
+				BD5E0CAA22A4FFA800626994 /* CakeTreeEditSaveView.h */,
+				BD5E0CAB22A4FFA800626994 /* CakeTreeEditSaveView.m */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		BD95954022A1129100E59F7C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -955,35 +1025,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD182DA822998738000F414A /* bee.gif in Resources */,
-				BD95945922A0BFC100E59F7C /* icon_add.png in Resources */,
-				BD95945F22A0BFC100E59F7C /* button_save.png in Resources */,
+				BD95945922A0BFC100E59F7C /* ct_icon_add.png in Resources */,
+				BD95945F22A0BFC100E59F7C /* ct_save.png in Resources */,
 				BD182DA522998738000F414A /* lvl0.png in Resources */,
-				BD95945C22A0BFC100E59F7C /* icon_great.png in Resources */,
+				BD5E0C9F22A4B4F600626994 /* ct_qd.png in Resources */,
+				BD95945C22A0BFC100E59F7C /* ct_icon_great.png in Resources */,
 				BD182DA622998738000F414A /* lvl2.png in Resources */,
 				BD95953722A0C74000E59F7C /* README.md in Resources */,
 				BD182DA122998738000F414A /* lvl3.png in Resources */,
+				BD5E0CA922A4F62E00626994 /* ct_cancel.png in Resources */,
+				BD5E0CA122A4B4F600626994 /* ct_myforest.png in Resources */,
 				BD182DA422998738000F414A /* caketree_gift.png in Resources */,
+				BD5E0CA322A4B4F600626994 /* ct_yhq.png in Resources */,
 				BD13EA5B229E328D00181706 /* bg_forest.png in Resources */,
 				BD95952E22A0C74000E59F7C /* ZLPhotoBrowser.bundle in Resources */,
 				BD13EA6B229E385600181706 /* MK.db in Resources */,
 				5E41387B2298E8A000938C3C /* 第三方库。部分需要修改或者不支持cocoapod的第三方的框架引入 in Resources */,
 				BD95952F22A0C74000E59F7C /* ZLPhotoActionSheet.xib in Resources */,
-				BD95945E22A0BFC100E59F7C /* button_fabu.png in Resources */,
+				BD5E0CA222A4B4F600626994 /* nickViewTitle.png in Resources */,
+				BD95945E22A0BFC100E59F7C /* ct_fabuBtn.png in Resources */,
 				BD95953022A0C74000E59F7C /* ZLPhotoBrowserCell.xib in Resources */,
 				5E41387E2298E8A000938C3C /* 工具类，一些非对象的，而是类方法调用的类 in Resources */,
-				BD95945B22A0BFC100E59F7C /* pic_yhq.png in Resources */,
 				BD182DA722998738000F414A /* lvlup.gif in Resources */,
-				BD95946122A0BFC100E59F7C /* pic_fabu.png in Resources */,
+				BD5E0CBC22A64B6F00626994 /* ct_reward.png in Resources */,
+				BD95946122A0BFC100E59F7C /* ct_fabuImg.png in Resources */,
 				5E41387F2298E8A000938C3C /* 资源。包含plist,image,html,bundle，Localizable.strings等 in Resources */,
 				5E41387A2298E8A000938C3C /* 配置。包含宏定义文件，全局配置文件，全局常量文件，颜色配置文件 in Resources */,
-				BD95945A22A0BFC100E59F7C /* button_daka.png in Resources */,
+				BD95945A22A0BFC100E59F7C /* ct_daka.png in Resources */,
 				5E41383B2298E30C00938C3C /* LaunchScreen.storyboard in Resources */,
 				BD16188D229BAB5600CE300F /* README.md in Resources */,
 				BD95951622A0C74000E59F7C /* LICENSE in Resources */,
-				BD95945722A0BFC100E59F7C /* icon_back.png in Resources */,
+				BD95945722A0BFC100E59F7C /* ct_icon_back.png in Resources */,
 				5E4138382298E30C00938C3C /* Assets.xcassets in Resources */,
 				BD182D9F22998738000F414A /* lvl6.png in Resources */,
-				BD95945622A0BFC100E59F7C /* button_notsave.png in Resources */,
+				BD95945622A0BFC100E59F7C /* ct_notsave.png in Resources */,
+				BD5E0CAE22A5042800626994 /* editSaveViewTitle.png in Resources */,
 				5E4138802298E8A000938C3C /* 系统框架。包含导入的系统的框架 in Resources */,
 				BD182DA022998738000F414A /* lvl4.png in Resources */,
 				5E41387C2298E8A000938C3C /* 模块。包含各个模块的Model,View,Controller,Manager in Resources */,
@@ -991,11 +1067,14 @@
 				BD16188C229BAB5600CE300F /* LICENSE in Resources */,
 				5E4138792298E8A000938C3C /* 帮助类。包含网络，数据库，归档，定位等操作类的封装和实现 in Resources */,
 				BD182DA222998738000F414A /* lvl5.png in Resources */,
+				BD5E0CA022A4B4F600626994 /* ct_icon_great_unselect.png in Resources */,
 				BD182DA922998738000F414A /* lvl1.png in Resources */,
 				BD12EE9B229CCE2B001F42B3 /* caketree_background.png in Resources */,
+				BD5E0CA422A4B4F600626994 /* nickView_placehold.png in Resources */,
 				5E41387D2298E8A000938C3C /* 程序入口。包含AppDelegate,main.c,info.plist文件 in Resources */,
+				BD5E0C9822A4B4E000626994 /* ct_forest.png in Resources */,
 				5E4138812298E8A000938C3C /* 类目。包含各种类的分类 in Resources */,
-				BD95946322A0BFC100E59F7C /* icon_closed.png in Resources */,
+				BD95946322A0BFC100E59F7C /* ct_icon_closed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1047,9 +1126,11 @@
 				BD95953222A0C74000E59F7C /* ZLThumbnailViewController.m in Sources */,
 				5E41388D2298EE9300938C3C /* CakeTreeEditViewController.m in Sources */,
 				BD95952222A0C74000E59F7C /* ZLCustomCamera.m in Sources */,
+				BD5E0CBF22A64F9600626994 /* CakeTreeAwardViewController.m in Sources */,
 				BD13EA53229E2CE400181706 /* MUser.m in Sources */,
 				BD95953522A0C74000E59F7C /* ZLEditVideoController.m in Sources */,
 				BD95952922A0C74000E59F7C /* ZLImageEditTool.m in Sources */,
+				BD5E0CB422A50C3800626994 /* UIViewController+CakeTree.m in Sources */,
 				BD13EA52229E2CE400181706 /* MPicture.m in Sources */,
 				BD95951D22A0C74000E59F7C /* ZLInteractiveTrasition.m in Sources */,
 				BD13EA44229E2CB300181706 /* JKDBModel.m in Sources */,
@@ -1058,6 +1139,7 @@
 				BD95951F22A0C74000E59F7C /* ZLProgressView.m in Sources */,
 				5E4138872298EDC500938C3C /* CakeTreeViewController.m in Sources */,
 				BD959357229FD59200E59F7C /* LRAnimationProgress.m in Sources */,
+				BD5E0CA722A4E98500626994 /* CakeTreeNickView.m in Sources */,
 				5E4138362298E30B00938C3C /* CakeTree.xcdatamodeld in Sources */,
 				5E41383E2298E30C00938C3C /* main.m in Sources */,
 				BD12EEA5229D0C1C001F42B3 /* CakeForestHeaderView.m in Sources */,
@@ -1066,6 +1148,7 @@
 				5E4138A422992DD800938C3C /* ViewControllerIntercepter.m in Sources */,
 				BD95951822A0C74000E59F7C /* ZLAlbumListController.m in Sources */,
 				BD13EA59229E30C500181706 /* Utility.m in Sources */,
+				BD5E0CAC22A4FFA800626994 /* CakeTreeEditSaveView.m in Sources */,
 				BD95952522A0C74000E59F7C /* ToastUtils.m in Sources */,
 				BD16188F229BAB5600CE300F /* YLImageView.m in Sources */,
 				BD13EA65229E36FF00181706 /* MomentConstant.m in Sources */,
@@ -1082,6 +1165,7 @@
 				BD95951922A0C74000E59F7C /* ZLPhotoBrowserCell.m in Sources */,
 				BD95951E22A0C74000E59F7C /* ZLPullDownInteractiveTransition.m in Sources */,
 				BD13EA51229E2CE400181706 /* Moment.m in Sources */,
+				BD5E0CBA22A63D4600626994 /* CTAddImgCollectionViewCell.m in Sources */,
 				BD95952A22A0C74000E59F7C /* ZLBrushBoardImageView.m in Sources */,
 				BD12EE9E229CE759001F42B3 /* UILabel+String.m in Sources */,
 				BD13EA64229E36FF00181706 /* MomentUtil.m in Sources */,
@@ -1097,12 +1181,14 @@
 				BD95953322A0C74000E59F7C /* ZLPhotoActionSheet.m in Sources */,
 				BD95952722A0C74000E59F7C /* ZLCollectionCell.m in Sources */,
 				5E4138902298EEE800938C3C /* CakeForestView.m in Sources */,
+				BD5E0CB722A6347500626994 /* CTImgCollectionViewCell.m in Sources */,
 				BD95952C22A0C74000E59F7C /* ZLClipItem.m in Sources */,
 				BD13EA55229E2CE400181706 /* MLocation.m in Sources */,
 				BD95952122A0C74000E59F7C /* NSBundle+ZLPhotoBrowser.m in Sources */,
 				BD95951C22A0C74000E59F7C /* ZLAnimateTransition.m in Sources */,
 				BD95953422A0C74000E59F7C /* ZLPhotoModel.m in Sources */,
 				BD95953122A0C74000E59F7C /* ZLShowBigImgViewController.m in Sources */,
+				BD5E0CC222A64FB000626994 /* CakeTreeAwardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

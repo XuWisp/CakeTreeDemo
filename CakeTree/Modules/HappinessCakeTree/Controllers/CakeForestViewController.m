@@ -10,16 +10,21 @@
 #import "CakeTreeViewController.h"
 #import "ZLPhotoBrowser.h"
 #import "CakeTreeEditViewController.h"
+#import <zhPopupController/zhPopupController.h>
 
 #import "CakeForestView.h"
 #import "CakeForestHeaderView.h"
+#import "CakeTreeNickView.h"
 
 extern NSString * const kCakeForestMyTreeBtnClick;
 extern NSString * const kCakeForestPunchBtnClick;
+extern NSString * const kCakeForestStarBtnClick;
+extern NSString * const kCakeForestDeleteBtnClick;
 
-@interface CakeForestViewController ()
+@interface CakeForestViewController () <CTNickViewDelegate>
 
 @property (nonatomic, strong) CakeForestView * mainV;
+@property (nonatomic, strong) CakeTreeNickView * nickV;
 @property (nonatomic, strong) NSDictionary * eventStrategy;
 
 @end
@@ -37,7 +42,19 @@ extern NSString * const kCakeForestPunchBtnClick;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         [MomentUtil initMomentData];
     });
+    UIButton *btn = [[UIButton alloc] initWithFrame:(CGRectMake(0, 0, kScreenH, 100))];
+    [btn addTarget:self action:@selector(adddata) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:btn];
+}
 
+- (void)adddata {
+    [self.mainV configWithData:@{}];
+    self.nickV.frame = CGRectMake(0,0,262.5,173);
+    self.zh_popupController = [zhPopupController new];
+    self.zh_popupController.dismissOnMaskTouched = NO;
+    self.zh_popupController.dismissOppositeDirection = YES;
+    self.zh_popupController.slideStyle = zhPopupSlideStyleShrinkInOut1;
+    [self.zh_popupController presentContentView:self.nickV duration:0.75 springAnimated:YES];
 }
 
 - (void)viewWillLayoutSubviews
@@ -52,11 +69,6 @@ extern NSString * const kCakeForestPunchBtnClick;
     [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
-}
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     // Notification的监听之类的事情
@@ -65,6 +77,16 @@ extern NSString * const kCakeForestPunchBtnClick;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - CTNickViewDelegate
+
+- (void)nickViewConfirmBtnClick {
+    NSLog(@"\nnickViewConfirmBtnClick");
+}
+
+- (void)nickViewCancelBtnClick {
+    [self.zh_popupController dismiss];
 }
 
 #pragma mark - event response
@@ -80,8 +102,6 @@ extern NSString * const kCakeForestPunchBtnClick;
 }
 
 - (void)treeBtnClick:(NSDictionary *)userInfo {
-//    [self.mainV configWithData:@{}];
-
     CakeTreeViewController *ctVC = [[CakeTreeViewController alloc] init];
     [self.navigationController pushViewController:ctVC animated:YES];
 }
@@ -98,11 +118,25 @@ extern NSString * const kCakeForestPunchBtnClick;
         //your codes
         CakeTreeEditViewController *vc = [[CakeTreeEditViewController alloc] init];
         [self showViewController:vc sender:nil];
+        NSDictionary *dic = @{
+                              @"images" : [images mutableCopy],
+                              @"assets" : [assets mutableCopy],
+                              @"isOriginal" : @(isOriginal),
+                              @"text" : @"",
+                              };
+        [vc configWithData:dic];
     }];
     // 调用相册
     [ac showPreviewAnimated:YES];
 }
 
+- (void)starBtnClick:(NSDictionary *)userInfo {
+    NSLog(@"\nstar\n%@", userInfo);
+}
+
+- (void)deleteBtnClick:(NSDictionary *)userInfo {
+    NSLog(@"\ndelete\n%@", userInfo);
+}
 
 #pragma mark - private methods
 // 正常情况下ViewController里面不应该写这层代码
@@ -116,11 +150,21 @@ extern NSString * const kCakeForestPunchBtnClick;
     return _mainV;
 }
 
+- (CakeTreeNickView *)nickV {
+    if (!_nickV) {
+        _nickV = [[CakeTreeNickView alloc] init];
+        _nickV.delegate = self;
+    }
+    return _nickV;
+}
+
 - (NSDictionary *)eventStrategy {
     if (_eventStrategy == nil) {
         _eventStrategy = @{
                            kCakeForestMyTreeBtnClick : [self createInvocationWithSelector:@selector(treeBtnClick:)],
-                           kCakeForestPunchBtnClick : [self createInvocationWithSelector:@selector(punchBtnClick:)]
+                           kCakeForestPunchBtnClick : [self createInvocationWithSelector:@selector(punchBtnClick:)],
+                           kCakeForestStarBtnClick : [self createInvocationWithSelector:@selector(starBtnClick:)],
+                           kCakeForestDeleteBtnClick : [self createInvocationWithSelector:@selector(deleteBtnClick:)],
                            };
     }
     return _eventStrategy;

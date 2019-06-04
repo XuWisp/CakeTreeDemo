@@ -7,10 +7,12 @@
 //
 
 #import "CakeTreeViewController.h"
+#import "UIViewController+CakeTree.h"
 
 #import "CakeTreeView.h"
 
 extern NSString * const kCakeTreeLvlUpBtnClick;
+extern NSString * const kCakeTreeBackBtnClick;
 
 @interface CakeTreeViewController ()
 
@@ -30,6 +32,7 @@ extern NSString * const kCakeTreeLvlUpBtnClick;
     [self.view addSubview:self.mainV];
     [self layoutViewSubviews];
     [self.mainV addTreeLevelImageByLevel:0];
+    [self setCakeTreeBackBtn];
 }
 
 - (void)layoutViewSubviews {
@@ -39,11 +42,6 @@ extern NSString * const kCakeTreeLvlUpBtnClick;
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -76,6 +74,11 @@ extern NSString * const kCakeTreeLvlUpBtnClick;
         return;
     }
 }
+
+- (void)backBtnClick:(NSDictionary *)userInfo {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 #pragma mark - private methods
 // 正常情况下ViewController里面不应该写这层代码

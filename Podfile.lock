@@ -9,6 +9,7 @@ PODS:
   - SDWebImage (5.0.3):
     - SDWebImage/Core (= 5.0.3)
   - SDWebImage/Core (5.0.3)
+  - zhPopupController (1.0.3)
 
 DEPENDENCIES:
   - Aspects
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - HandyAutoLayout
   - HandyFrame
   - SDWebImage
+  - zhPopupController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -26,6 +28,7 @@ SPEC REPOS:
     - HandyAutoLayout
     - HandyFrame
     - SDWebImage
+    - zhPopupController
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
@@ -34,7 +37,8 @@ SPEC CHECKSUMS:
   HandyAutoLayout: f6ef3ab011318f8493fa868d93d9b03ceef4ef90
   HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
   SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
+  zhPopupController: 4e6bd734062cb9c7ebe8113568550bade168bed7
 
-PODFILE CHECKSUM: 61fdb81362109b13a228b0b36d077bdb5e5efde2
+PODFILE CHECKSUM: c6d8fde31a8371a1b0e982f49347e561f361014f
 
 COCOAPODS: 1.5.3

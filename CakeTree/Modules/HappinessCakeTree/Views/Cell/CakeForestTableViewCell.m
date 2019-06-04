@@ -9,6 +9,9 @@
 #import "CakeForestTableViewCell.h"
 #import "CTImageListView.h"
 
+NSString * const kCakeForestStarBtnClick = @"kCakeForestStarBtnClick";
+NSString * const kCakeForestDeleteBtnClick = @"kCakeForestDeleteBtnClick";
+
 @interface CakeForestTableViewCell ()
 
 @property (nonatomic, strong) UIView *borderV;
@@ -66,6 +69,14 @@
 
 
 #pragma mark - event response
+
+- (void)starBtnClick:(UIButton *)btn {
+    [self routerEventWithName:kCakeForestStarBtnClick userInfo:@{@"index":@(self.tag)}];
+}
+
+- (void)deleteBtnClick:(UIButton *)btn {
+    [self routerEventWithName:kCakeForestDeleteBtnClick userInfo:@{@"index":@(self.tag)}];
+}
 
 #pragma mark - public methods
 
@@ -141,9 +152,17 @@
 - (UIButton *)starBtn {
     if (!_starBtn) {
         _starBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-        [_starBtn setTitle:@"赞" forState:(UIControlStateNormal)];
+        [_starBtn setImage:[UIImage imageNamed:@"ct_icon_great_unselect"] forState:(UIControlStateNormal)];
+        [_starBtn setImage:[UIImage imageNamed:@"ct_icon_great"] forState:(UIControlStateSelected)];
+        [_starBtn setImageEdgeInsets:UIEdgeInsetsMake(15, 0, 15, 30)];
+        _starBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+
+        [_starBtn setTitle:@"123" forState:(UIControlStateNormal)];
+        [_starBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, -30, 0, 0)];
         _starBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         [_starBtn setTitleColor:UIColorFromHex(0x222222) forState:(UIControlStateNormal)];
+        
+        [_starBtn addTarget:self action:@selector(starBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _starBtn;
 }
@@ -154,6 +173,7 @@
         [_deleteBtn setTitle:@"删除" forState:(UIControlStateNormal)];
         _deleteBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         [_deleteBtn setTitleColor:UIColorFromHex(0x222222) forState:(UIControlStateNormal)];
+        [_deleteBtn addTarget:self action:@selector(deleteBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _deleteBtn;
 }

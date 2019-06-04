@@ -85,7 +85,7 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
 }
 
 - (void)VFLlayout {
-    @[H,H,H,H,H].VFL[0][@[_backgroundImgV,_beeGIFImgV,_giftImgV,_lvlUpGIFImgV,_levelLbl]][0].end();
+    @[H,H,H,H,H].VFL[0] [@[_backgroundImgV,_beeGIFImgV,_giftImgV,_lvlUpGIFImgV,_levelLbl]] [0].end();
     H[35][_pv_backgroundView][35].end();
     H[_ticketBtn[109]][19].end();
     
@@ -227,7 +227,7 @@ NSString * const kCakeTreeLvlUpBtnClick = @"kCakeTreeLvlUpBtnClick";
 - (UIButton *)ticketBtn {
     if (!_ticketBtn) {
         _ticketBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-        [_ticketBtn setBackgroundImage:[UIImage imageNamed:@""] forState:(UIControlStateNormal)];
+        [_ticketBtn setBackgroundImage:[UIImage imageNamed:@"ct_reward"] forState:(UIControlStateNormal)];
     }
     return _ticketBtn;
 }

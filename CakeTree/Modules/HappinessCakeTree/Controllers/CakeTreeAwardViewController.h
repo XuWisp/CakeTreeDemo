@@ -1,8 +1,8 @@
 //
-//  CakeTreeEditView.h
+//  CakeTreeAwardViewController.h
 //  CakeTree
 //
-//  Created by xush on 2019/5/25.
+//  Created by 徐沙洪 on 2019/6/4.
 //  Copyright © 2019 Xush. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CakeTreeEditView : UIView
-
-- (void)configWithData:(NSDictionary *)data;
+@interface CakeTreeAwardViewController : UIViewController
 
 @end
 

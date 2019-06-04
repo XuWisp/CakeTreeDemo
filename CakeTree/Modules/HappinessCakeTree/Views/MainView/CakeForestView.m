@@ -43,8 +43,9 @@ NSString * const kCakeForestMyTreeBtnClick = @"kCakeForestMyTreeBtnClick";
 - (void)layoutSubviews {
     [super layoutSubviews];
     // 做布局的事情
-    [self.myTreeBtn centerEqualToView:self];
-    [self.myTreeBtn setCt_size:CGSizeMake(100, 20)];
+    [self.myTreeBtn setCt_size:CGSizeMake(160, 68)];
+    [self.myTreeBtn rightInContainer:0 shouldResize:NO];
+    [self.myTreeBtn bottomInContainer:100+KMagrinBottom shouldResize:NO];
     
     [self.backgroundImgV fill];
     [self.backgroundImgV setSize:(CGSizeMake(375, 410)) screenType:(UIScreenType_iPhone6)];
@@ -108,7 +109,7 @@ NSString * const kCakeForestMyTreeBtnClick = @"kCakeForestMyTreeBtnClick";
 - (UIButton *)myTreeBtn {
     if (!_myTreeBtn) {
         _myTreeBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-        [_myTreeBtn setTitle:@"我的幸福蛋糕树" forState:(UIControlStateNormal)];
+        [_myTreeBtn setBackgroundImage:[UIImage imageNamed:@"ct_myforest"] forState:(UIControlStateNormal)];
         [_myTreeBtn addTarget:self action:@selector(btnClick:) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _myTreeBtn;
@@ -122,6 +123,7 @@ NSString * const kCakeForestMyTreeBtnClick = @"kCakeForestMyTreeBtnClick";
         _tableV.estimatedRowHeight = 300;
         _tableV.dataSource = self;
         _tableV.delegate = self;
+        _tableV.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableV;
 }

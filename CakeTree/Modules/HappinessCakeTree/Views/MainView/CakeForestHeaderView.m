@@ -68,6 +68,7 @@ NSString * const kCakeForestPunchBtnClick = @"kCakeForestPunchBtnClick";
 - (UIImageView *)titleImgV {
     if (!_titleImgV) {
         _titleImgV = [[UIImageView alloc] init];
+        _titleImgV.image = [UIImage imageNamed:@"ct_forest"];
     }
     return _titleImgV;
 }
@@ -86,7 +87,7 @@ NSString * const kCakeForestPunchBtnClick = @"kCakeForestPunchBtnClick";
 - (UIButton *)punchBtn {
     if (!_punchBtn) {
         _punchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_punchBtn setBackgroundImage:[UIImage imageNamed:@"button_daka"] forState:(UIControlStateNormal)];
+        [_punchBtn setBackgroundImage:[UIImage imageNamed:@"ct_daka"] forState:(UIControlStateNormal)];
         [_punchBtn addTarget:self action:@selector(punchBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _punchBtn;

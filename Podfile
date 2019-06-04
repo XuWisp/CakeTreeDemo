@@ -9,6 +9,8 @@ pod 'FMDB'
 pod "SDWebImage"
 pod 'AUULayout'
 #pod 'ZLPhotoBrowser', '~> 3.0.4'
+#pod 'MMPopupView'
+pod 'zhPopupController'
 
 end
 

@@ -179,7 +179,7 @@
     [self addSubview:self.bottomView];
     
     self.bottomImgV = [[UIImageView alloc] init];
-    self.bottomImgV.image = GetImageWithName(@"button_takeapicture");
+    self.bottomImgV.image = GetImageWithName(@"ct_takeapicture");
     [self.bottomView addSubview:self.bottomImgV];
 
     self.topView = [[UIView alloc] init];
@@ -195,10 +195,10 @@
     //[self addSubview:self.dismissBtn];
     
     self.photoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.photoBtn setImage:GetImageWithName(@"button_photoalbum") forState:UIControlStateNormal];
+    [self.photoBtn setImage:GetImageWithName(@"ct_photoalbum") forState:UIControlStateNormal];
     [self.photoBtn addTarget:self action:@selector(photoBtnClick) forControlEvents:UIControlEventTouchUpInside];
     //
-    [self addSubview:self.photoBtn];
+    //[self addSubview:self.photoBtn];
     
     self.cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.cancelBtn.backgroundColor = [kRGB(244, 244, 244) colorWithAlphaComponent:.9];
@@ -587,7 +587,7 @@
     [self.view addSubview:self.toggleCameraBtn];
     
     self.dismissBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.dismissBtn setImage:GetImageWithName(@"icon_closed") forState:UIControlStateNormal];
+    [self.dismissBtn setImage:GetImageWithName(@"ct_icon_closed") forState:UIControlStateNormal];
     [self.dismissBtn addTarget:self action:@selector(onDismiss) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.dismissBtn];
 
